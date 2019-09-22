@@ -1,0 +1,85 @@
+module full_adder (
+	input x,y,z,
+	output s, c
+	);
+
+assign s = x^y^z;
+assign c = (x&y)|(y&z)|(x&z);
+
+endmodule
+
+
+module ADDER4 (
+	input [3:0] A, B,
+	input logic c_in,
+	output [3:0] S,
+	output logic c_out
+	);
+
+
+logic [3:0] sum0;
+logic [3:0] sum1;
+logic [3:0] c0;
+logic [3:0] c1;
+
+
+		
+			
+
+//zero as c_in
+
+full_adder FA0(.x(A[0]), .y(B[0]), .z(0), .s(S[0]), .c(c0[0]));
+full_adder FA1(.x(A[1]), .y(B[1]), .z(c0[0]), .s(S[1]), .c(c0[1]));
+full_adder FA2(.x(A[2]), .y(B[2]), .z(c0[1]), .s(S[2]), .c(c0[2]));
+full_adder FA3(.x(A[3]), .y(B[3]), .z(c0[2]), .s(S[3]), .c(c0[3]));
+
+//one as c_in
+
+
+full_adder FA0(.x(A[0]), .y(B[0]), .z(1), .s(S[0]), .c(c1[0]));
+full_adder FA1(.x(A[1]), .y(B[1]), .z(c1[0]), .s(S[1]), .c(c1[1]));
+full_adder FA2(.x(A[2]), .y(B[2]), .z(c1[1]), .s(S[2]), .c(c1[2]));
+full_adder FA3(.x(A[3]), .y(B[3]), .z(c1[2]), .s(S[3]), .c(c1[3]));
+
+always_comb
+	begin
+		if (c_in == 0)
+		begin
+			sum = sum0
+			c_out = c0[3]
+		end
+		else (c_in == 1)
+		begin 
+			sum = sum1
+			c_out = c1[3]
+		end	
+	end
+
+endmodule
+
+
+
+
+
+module select_adder (
+	input [15:0] A, B,
+	input logic c_in,
+	output [15:0] S,
+	output logic c_out);
+
+
+	logic [2:0] c;
+
+	ADDER4 CLA0(.A(A[3:0]), .B(B[3:0]), .c_in(c_in), .S(S[3:0]), .c_out(c[0]));
+	ADDER4 CLA1(.A(A[7:4]), .B(B[7:4]), .c_in(c[0]), .S(S[7:4]), .c_out(c[1]);
+	ADDER4 CLA2(.A(A[11:8]), .B(B[11:8]), .c_in(c[1]), .S(S[11:8]), .c(c[2]));
+	ADDER4 CLA3(.A(A[15:12]), .B(B[15:12]), .c_in(c[2]), .S(S[15:12]), .c(c_out));
+
+
+
+
+
+
+endmodule
+
+
