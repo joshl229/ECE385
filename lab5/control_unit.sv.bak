@@ -1,0 +1,12 @@
+module control_unit(
+							input run,
+							input clear,
+							input clk,
+							input reset,
+							input M,
+							output logic clr_ldB,
+							output logic shift,
+							output logic add, 
+							output logic sub);
+							
+				
