@@ -1,8 +1,8 @@
 module ninebitadder(
-	input [7:0] A,
-	input[7:0] B,
-	input cin,
-	input fn, 
+	input logic [7:0] A,
+	input logic [7:0] B,
+	input logic cin,
+	input logic fn, 
 	output logic [8:0] sum,
 	output logic cout
 );
@@ -13,8 +13,8 @@ logic A9, BB9; // internal sign extension bits
 
 assign BB = (B ^ {9{fn}}); // When fn=1 complement B
 // Sign extension bits 
-assign A9 = A[8]; 
-assign BB9 = BB[8];
+assign A9 = A[7]; 
+assign BB9 = BB[7];
 
 full_adder FA0(.x(A[0] ), .y(BB[0] ), .cin(fn), .s(sum[0]), .cout(c0));
 full_adder FA1(.x(A[1] ), .y(BB[1] ), .cin(c0), .s(sum[1]), .cout(c1));
