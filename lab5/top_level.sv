@@ -6,7 +6,7 @@ module top_level(input logic	clk,
 						
 						output logic [6:0] ahexu, ahexl, bhexu, bhexl,
 						output logic [7:0] aval, bval,
-						output logic x
+						output logic xbit
 						);
 						
 // Declare Internal Registers
@@ -28,7 +28,7 @@ assign bval = B; // Connect Bval to B
 reg_8 register_a (
 			.Clk(clk),
 			.Reset(clr_ld_s | reset_sh),
-			.Shift_In(x),
+			.Shift_In(xbit),
 			.Load(add_s | sub_s),
 			.Shift_En(shift_s),
 			.Data_In(XA[7:0]),
@@ -61,7 +61,7 @@ flip_flop flipflop(
 		.load(add_s | sub_s),
 		.reset(clr_ld_s | reset_sh),
 		.in(XA[8]),
-		.out(m)
+		.out(xbit)
 		);
 		
 control_unit controller(

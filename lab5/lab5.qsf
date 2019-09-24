@@ -64,4 +64,45 @@ set_global_assignment -name SYSTEMVERILOG_FILE top_level.sv
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_W28 -to ahexl[6]
+set_location_assignment PIN_W27 -to ahexl[5]
+set_location_assignment PIN_Y26 -to ahexl[4]
+set_location_assignment PIN_W26 -to ahexl[3]
+set_location_assignment PIN_Y25 -to ahexl[2]
+set_location_assignment PIN_AA26 -to ahexl[1]
+set_location_assignment PIN_AA25 -to ahexl[0]
+set_location_assignment PIN_Y19 -to ahexu[6]
+set_location_assignment PIN_AF23 -to ahexu[5]
+set_location_assignment PIN_AD24 -to ahexu[4]
+set_location_assignment PIN_AA21 -to ahexu[3]
+set_location_assignment PIN_AB20 -to ahexu[2]
+set_location_assignment PIN_U21 -to ahexu[1]
+set_location_assignment PIN_V21 -to ahexu[0]
+set_location_assignment PIN_H22 -to bhexl[6]
+set_location_assignment PIN_J22 -to bhexl[5]
+set_location_assignment PIN_L25 -to bhexl[4]
+set_location_assignment PIN_L26 -to bhexl[3]
+set_location_assignment PIN_E17 -to bhexl[2]
+set_location_assignment PIN_F22 -to bhexl[1]
+set_location_assignment PIN_G18 -to bhexl[0]
+set_location_assignment PIN_U24 -to bhexu[6]
+set_location_assignment PIN_U23 -to bhexu[5]
+set_location_assignment PIN_W25 -to bhexu[4]
+set_location_assignment PIN_W22 -to bhexu[3]
+set_location_assignment PIN_W21 -to bhexu[2]
+set_location_assignment PIN_Y22 -to bhexu[1]
+set_location_assignment PIN_M24 -to bhexu[0]
+set_location_assignment PIN_AB26 -to s[7]
+set_location_assignment PIN_AD26 -to s[6]
+set_location_assignment PIN_AC26 -to s[5]
+set_location_assignment PIN_AB27 -to s[4]
+set_location_assignment PIN_AD27 -to s[3]
+set_location_assignment PIN_AC27 -to s[2]
+set_location_assignment PIN_AC28 -to s[1]
+set_location_assignment PIN_AB28 -to s[0]
+set_location_assignment PIN_Y2 -to clk
+set_location_assignment PIN_R24 -to run
+set_location_assignment PIN_M23 -to reset
+set_location_assignment PIN_N21 -to cleara_loadb
+set_location_assignment PIN_F17 -to xbit
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

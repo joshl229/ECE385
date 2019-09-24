@@ -1,5 +1,5 @@
-Analysis & Elaboration report for lab5
-Mon Sep 23 23:54:43 2019
+Analysis & Synthesis report for lab5
+Tue Sep 24 01:18:20 2019
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -7,14 +7,22 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Elaboration Summary
-  3. Parallel Compilation
-  4. Analysis & Elaboration Settings
-  5. Port Connectivity Checks: "flip_flop:flipflop"
-  6. Port Connectivity Checks: "ninebitadder:adder|full_adder:FA8"
-  7. Port Connectivity Checks: "ninebitadder:adder"
-  8. Port Connectivity Checks: "reg_8:register_b"
-  9. Analysis & Elaboration Messages
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |top_level|control_unit:controller|current_state
+  9. Registers Removed During Synthesis
+ 10. General Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Port Connectivity Checks: "ninebitadder:adder|full_adder:FA8"
+ 13. Port Connectivity Checks: "ninebitadder:adder"
+ 14. Port Connectivity Checks: "reg_8:register_b"
+ 15. Post-Synthesis Netlist Statistics for Top Partition
+ 16. Elapsed Time Per Partition
+ 17. Analysis & Synthesis Messages
 
 
 
@@ -38,43 +46,27 @@ refer to the applicable agreement for further details.
 
 
 +----------------------------------------------------------------------------------+
-; Analysis & Elaboration Summary                                                   ;
+; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status      ; Successful - Mon Sep 23 23:54:43 2019       ;
+; Analysis & Synthesis Status        ; Successful - Tue Sep 24 01:18:20 2019       ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; lab5                                        ;
 ; Top-level Entity Name              ; top_level                                   ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; N/A until Partition Merge                   ;
-;     Total combinational functions  ; N/A until Partition Merge                   ;
-;     Dedicated logic registers      ; N/A until Partition Merge                   ;
-; Total registers                    ; N/A until Partition Merge                   ;
-; Total pins                         ; N/A until Partition Merge                   ;
-; Total virtual pins                 ; N/A until Partition Merge                   ;
-; Total memory bits                  ; N/A until Partition Merge                   ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
-; Total PLLs                         ; N/A until Partition Merge                   ;
+; Total logic elements               ; 94                                          ;
+;     Total combinational functions  ; 78                                          ;
+;     Dedicated logic registers      ; 39                                          ;
+; Total registers                    ; 39                                          ;
+; Total pins                         ; 57                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
 +------------------------------------+---------------------------------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-+----------------------------+-------------+
-
-
 +------------------------------------------------------------------------------------------------------------+
-; Analysis & Elaboration Settings                                                                            ;
+; Analysis & Synthesis Settings                                                                              ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
@@ -159,13 +151,167 @@ refer to the applicable agreement for further details.
 +------------------------------------------------------------------+--------------------+--------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "flip_flop:flipflop"                                                                 ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; out  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 2           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
++----------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                            ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                        ; Library ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------+---------+
+; Synchronizers.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/joey3/Desktop/ECE385/lab5/Synchronizers.sv ;         ;
+; HexDriver.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/joey3/Desktop/ECE385/lab5/HexDriver.sv     ;         ;
+; register.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/joey3/Desktop/ECE385/lab5/register.sv      ;         ;
+; full_adder.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/joey3/Desktop/ECE385/lab5/full_adder.sv    ;         ;
+; 9bitadder.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/joey3/Desktop/ECE385/lab5/9bitadder.sv     ;         ;
+; control_unit.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/joey3/Desktop/ECE385/lab5/control_unit.sv  ;         ;
+; flip_flop.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/joey3/Desktop/ECE385/lab5/flip_flop.sv     ;         ;
+; top_level.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/joey3/Desktop/ECE385/lab5/top_level.sv     ;         ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 94        ;
+;                                             ;           ;
+; Total combinational functions               ; 78        ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 60        ;
+;     -- 3 input functions                    ; 11        ;
+;     -- <=2 input functions                  ; 7         ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 78        ;
+;     -- arithmetic mode                      ; 0         ;
+;                                             ;           ;
+; Total registers                             ; 39        ;
+;     -- Dedicated logic registers            ; 39        ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 57        ;
+;                                             ;           ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 39        ;
+; Total fan-out                               ; 508       ;
+; Average fan-out                             ; 2.20      ;
++---------------------------------------------+-----------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                  ;
++------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------+--------------+--------------+
+; Compilation Hierarchy Node   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                          ; Entity Name  ; Library Name ;
++------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------+--------------+--------------+
+; |top_level                   ; 78 (4)              ; 39 (0)                    ; 0           ; 0            ; 0       ; 0         ; 57   ; 0            ; |top_level                                   ; top_level    ; work         ;
+;    |HexDriver:HexAL|         ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|HexDriver:HexAL                   ; HexDriver    ; work         ;
+;    |HexDriver:HexAU|         ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|HexDriver:HexAU                   ; HexDriver    ; work         ;
+;    |HexDriver:HexBL|         ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|HexDriver:HexBL                   ; HexDriver    ; work         ;
+;    |HexDriver:HexBU|         ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|HexDriver:HexBU                   ; HexDriver    ; work         ;
+;    |control_unit:controller| ; 7 (7)               ; 19 (19)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|control_unit:controller           ; control_unit ; work         ;
+;    |flip_flop:flipflop|      ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|flip_flop:flipflop                ; flip_flop    ; work         ;
+;    |ninebitadder:adder|      ; 16 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|ninebitadder:adder                ; ninebitadder ; work         ;
+;       |full_adder:FA0|       ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|ninebitadder:adder|full_adder:FA0 ; full_adder   ; work         ;
+;       |full_adder:FA1|       ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|ninebitadder:adder|full_adder:FA1 ; full_adder   ; work         ;
+;       |full_adder:FA2|       ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|ninebitadder:adder|full_adder:FA2 ; full_adder   ; work         ;
+;       |full_adder:FA3|       ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|ninebitadder:adder|full_adder:FA3 ; full_adder   ; work         ;
+;       |full_adder:FA4|       ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|ninebitadder:adder|full_adder:FA4 ; full_adder   ; work         ;
+;       |full_adder:FA5|       ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|ninebitadder:adder|full_adder:FA5 ; full_adder   ; work         ;
+;       |full_adder:FA6|       ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|ninebitadder:adder|full_adder:FA6 ; full_adder   ; work         ;
+;       |full_adder:FA7|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|ninebitadder:adder|full_adder:FA7 ; full_adder   ; work         ;
+;       |full_adder:FA8|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|ninebitadder:adder|full_adder:FA8 ; full_adder   ; work         ;
+;    |reg_8:register_a|        ; 10 (10)             ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|reg_8:register_a                  ; reg_8        ; work         ;
+;    |reg_8:register_b|        ; 9 (9)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|reg_8:register_b                  ; reg_8        ; work         ;
+;    |sync:button_sync[0]|     ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|sync:button_sync[0]               ; sync         ; work         ;
+;    |sync:button_sync[1]|     ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|sync:button_sync[1]               ; sync         ; work         ;
+;    |sync:button_sync[2]|     ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|sync:button_sync[2]               ; sync         ; work         ;
++------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------+--------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |top_level|control_unit:controller|current_state                                                                                                                                                                                                                                                                                                                                                                                                                    ;
++--------------------------+--------------------------+--------------------------+------------------------+-------------------------+-------------------------+--------------------------+------------------------+------------------------+---------------------+---------------------+-------------------+--------------------+--------------------+---------------------+-------------------+-------------------+-----------------------+--------------------+---------------------+
+; Name                     ; current_state.shiftEight ; current_state.shiftSeven ; current_state.shiftSix ; current_state.shiftFive ; current_state.shiftFour ; current_state.shiftThree ; current_state.shiftTwo ; current_state.shiftOne ; current_state.eight ; current_state.seven ; current_state.six ; current_state.five ; current_state.four ; current_state.three ; current_state.two ; current_state.one ; current_state.clear_a ; current_state.halt ; current_state.start ;
++--------------------------+--------------------------+--------------------------+------------------------+-------------------------+-------------------------+--------------------------+------------------------+------------------------+---------------------+---------------------+-------------------+--------------------+--------------------+---------------------+-------------------+-------------------+-----------------------+--------------------+---------------------+
+; current_state.start      ; 0                        ; 0                        ; 0                      ; 0                       ; 0                       ; 0                        ; 0                      ; 0                      ; 0                   ; 0                   ; 0                 ; 0                  ; 0                  ; 0                   ; 0                 ; 0                 ; 0                     ; 0                  ; 0                   ;
+; current_state.halt       ; 0                        ; 0                        ; 0                      ; 0                       ; 0                       ; 0                        ; 0                      ; 0                      ; 0                   ; 0                   ; 0                 ; 0                  ; 0                  ; 0                   ; 0                 ; 0                 ; 0                     ; 1                  ; 1                   ;
+; current_state.clear_a    ; 0                        ; 0                        ; 0                      ; 0                       ; 0                       ; 0                        ; 0                      ; 0                      ; 0                   ; 0                   ; 0                 ; 0                  ; 0                  ; 0                   ; 0                 ; 0                 ; 1                     ; 0                  ; 1                   ;
+; current_state.one        ; 0                        ; 0                        ; 0                      ; 0                       ; 0                       ; 0                        ; 0                      ; 0                      ; 0                   ; 0                   ; 0                 ; 0                  ; 0                  ; 0                   ; 0                 ; 1                 ; 0                     ; 0                  ; 1                   ;
+; current_state.two        ; 0                        ; 0                        ; 0                      ; 0                       ; 0                       ; 0                        ; 0                      ; 0                      ; 0                   ; 0                   ; 0                 ; 0                  ; 0                  ; 0                   ; 1                 ; 0                 ; 0                     ; 0                  ; 1                   ;
+; current_state.three      ; 0                        ; 0                        ; 0                      ; 0                       ; 0                       ; 0                        ; 0                      ; 0                      ; 0                   ; 0                   ; 0                 ; 0                  ; 0                  ; 1                   ; 0                 ; 0                 ; 0                     ; 0                  ; 1                   ;
+; current_state.four       ; 0                        ; 0                        ; 0                      ; 0                       ; 0                       ; 0                        ; 0                      ; 0                      ; 0                   ; 0                   ; 0                 ; 0                  ; 1                  ; 0                   ; 0                 ; 0                 ; 0                     ; 0                  ; 1                   ;
+; current_state.five       ; 0                        ; 0                        ; 0                      ; 0                       ; 0                       ; 0                        ; 0                      ; 0                      ; 0                   ; 0                   ; 0                 ; 1                  ; 0                  ; 0                   ; 0                 ; 0                 ; 0                     ; 0                  ; 1                   ;
+; current_state.six        ; 0                        ; 0                        ; 0                      ; 0                       ; 0                       ; 0                        ; 0                      ; 0                      ; 0                   ; 0                   ; 1                 ; 0                  ; 0                  ; 0                   ; 0                 ; 0                 ; 0                     ; 0                  ; 1                   ;
+; current_state.seven      ; 0                        ; 0                        ; 0                      ; 0                       ; 0                       ; 0                        ; 0                      ; 0                      ; 0                   ; 1                   ; 0                 ; 0                  ; 0                  ; 0                   ; 0                 ; 0                 ; 0                     ; 0                  ; 1                   ;
+; current_state.eight      ; 0                        ; 0                        ; 0                      ; 0                       ; 0                       ; 0                        ; 0                      ; 0                      ; 1                   ; 0                   ; 0                 ; 0                  ; 0                  ; 0                   ; 0                 ; 0                 ; 0                     ; 0                  ; 1                   ;
+; current_state.shiftOne   ; 0                        ; 0                        ; 0                      ; 0                       ; 0                       ; 0                        ; 0                      ; 1                      ; 0                   ; 0                   ; 0                 ; 0                  ; 0                  ; 0                   ; 0                 ; 0                 ; 0                     ; 0                  ; 1                   ;
+; current_state.shiftTwo   ; 0                        ; 0                        ; 0                      ; 0                       ; 0                       ; 0                        ; 1                      ; 0                      ; 0                   ; 0                   ; 0                 ; 0                  ; 0                  ; 0                   ; 0                 ; 0                 ; 0                     ; 0                  ; 1                   ;
+; current_state.shiftThree ; 0                        ; 0                        ; 0                      ; 0                       ; 0                       ; 1                        ; 0                      ; 0                      ; 0                   ; 0                   ; 0                 ; 0                  ; 0                  ; 0                   ; 0                 ; 0                 ; 0                     ; 0                  ; 1                   ;
+; current_state.shiftFour  ; 0                        ; 0                        ; 0                      ; 0                       ; 1                       ; 0                        ; 0                      ; 0                      ; 0                   ; 0                   ; 0                 ; 0                  ; 0                  ; 0                   ; 0                 ; 0                 ; 0                     ; 0                  ; 1                   ;
+; current_state.shiftFive  ; 0                        ; 0                        ; 0                      ; 1                       ; 0                       ; 0                        ; 0                      ; 0                      ; 0                   ; 0                   ; 0                 ; 0                  ; 0                  ; 0                   ; 0                 ; 0                 ; 0                     ; 0                  ; 1                   ;
+; current_state.shiftSix   ; 0                        ; 0                        ; 1                      ; 0                       ; 0                       ; 0                        ; 0                      ; 0                      ; 0                   ; 0                   ; 0                 ; 0                  ; 0                  ; 0                   ; 0                 ; 0                 ; 0                     ; 0                  ; 1                   ;
+; current_state.shiftSeven ; 0                        ; 1                        ; 0                      ; 0                       ; 0                       ; 0                        ; 0                      ; 0                      ; 0                   ; 0                   ; 0                 ; 0                  ; 0                  ; 0                   ; 0                 ; 0                 ; 0                     ; 0                  ; 1                   ;
+; current_state.shiftEight ; 1                        ; 0                        ; 0                      ; 0                       ; 0                       ; 0                        ; 0                      ; 0                      ; 0                   ; 0                   ; 0                 ; 0                  ; 0                  ; 0                   ; 0                 ; 0                 ; 0                     ; 0                  ; 1                   ;
++--------------------------+--------------------------+--------------------------+------------------------+-------------------------+-------------------------+--------------------------+------------------------+------------------------+---------------------+---------------------+-------------------+--------------------+--------------------+---------------------+-------------------+-------------------+-----------------------+--------------------+---------------------+
+
+
++--------------------------------------------------------------+
+; Registers Removed During Synthesis                           ;
++-----------------------------------------+--------------------+
+; Register name                           ; Reason for Removal ;
++-----------------------------------------+--------------------+
+; control_unit:controller|current_state~4 ; Lost fanout        ;
+; control_unit:controller|current_state~5 ; Lost fanout        ;
+; control_unit:controller|current_state~6 ; Lost fanout        ;
+; control_unit:controller|current_state~7 ; Lost fanout        ;
+; control_unit:controller|current_state~8 ; Lost fanout        ;
+; Total Number of Removed Registers = 5   ;                    ;
++-----------------------------------------+--------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 39    ;
+; Number of registers using Synchronous Clear  ; 8     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 20    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 16    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------+
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |top_level|reg_8:register_a|Data_Out[0] ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |top_level|reg_8:register_b|Data_Out[0] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------+
 
 
 +---------------------------------------------------------------+
@@ -195,14 +341,46 @@ refer to the applicable agreement for further details.
 +-----------+--------+----------+------------------------+
 
 
-+---------------------------------+
-; Analysis & Elaboration Messages ;
-+---------------------------------+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 57                          ;
+; cycloneiii_ff         ; 39                          ;
+;     CLR               ; 20                          ;
+;     ENA               ; 8                           ;
+;     ENA SCLR          ; 8                           ;
+;     plain             ; 3                           ;
+; cycloneiii_lcell_comb ; 82                          ;
+;     normal            ; 82                          ;
+;         1 data inputs ; 7                           ;
+;         2 data inputs ; 4                           ;
+;         3 data inputs ; 11                          ;
+;         4 data inputs ; 60                          ;
+;                       ;                             ;
+; Max LUT depth         ; 9.00                        ;
+; Average LUT depth     ; 3.33                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Elaboration
+Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Mon Sep 23 23:54:25 2019
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab5 -c lab5 --analysis_and_elaboration
+    Info: Processing started: Tue Sep 24 01:18:02 2019
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab5 -c lab5
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 3 design units, including 3 entities, in source file synchronizers.sv
@@ -234,10 +412,18 @@ Info (12128): Elaborating entity "flip_flop" for hierarchy "flip_flop:flipflop" 
 Info (12128): Elaborating entity "control_unit" for hierarchy "control_unit:controller" File: C:/Users/joey3/Desktop/ECE385/lab5/top_level.sv Line: 77
 Info (12128): Elaborating entity "HexDriver" for hierarchy "HexDriver:HexAL" File: C:/Users/joey3/Desktop/ECE385/lab5/top_level.sv Line: 82
 Info (12128): Elaborating entity "sync" for hierarchy "sync:button_sync[0]" File: C:/Users/joey3/Desktop/ECE385/lab5/top_level.sv Line: 96
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4726 megabytes
-    Info: Processing ended: Mon Sep 23 23:54:43 2019
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 5 registers lost all their fanouts during netlist optimizations.
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 151 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 12 input pins
+    Info (21059): Implemented 45 output pins
+    Info (21061): Implemented 94 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 4762 megabytes
+    Info: Processing ended: Tue Sep 24 01:18:20 2019
     Info: Elapsed time: 00:00:18
-    Info: Total CPU time (on all processors): 00:00:39
+    Info: Total CPU time (on all processors): 00:00:37
 
 
