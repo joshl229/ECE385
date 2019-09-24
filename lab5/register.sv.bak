@@ -12,10 +12,7 @@ begin
 	else if (Load)
 		Data_Out <= Data_In;
 	else if (Shift_En)
-	begin
 		Data_Out <= { Shift_In, Data_Out[7:1] };
-	end
-
 	end
 	
 assign Shift_Out = Data_Out[0];

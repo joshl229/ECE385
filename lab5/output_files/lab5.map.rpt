@@ -1,5 +1,5 @@
 Analysis & Elaboration report for lab5
-Sun Sep 22 23:23:41 2019
+Mon Sep 23 19:25:53 2019
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -36,7 +36,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                                   ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status      ; Failed - Sun Sep 22 23:23:41 2019           ;
+; Analysis & Elaboration Status      ; Failed - Mon Sep 23 19:25:53 2019           ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; lab5                                        ;
 ; Top-level Entity Name              ; lab5                                        ;
@@ -161,17 +161,33 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Sun Sep 22 23:23:22 2019
+    Info: Processing started: Mon Sep 23 19:25:29 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab5 -c lab5 --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 3 design units, including 3 entities, in source file synchronizers.sv
+    Info (12023): Found entity 1: sync File: C:/Users/joey3/Desktop/ECE385/lab5/Synchronizers.sv Line: 4
+    Info (12023): Found entity 2: sync_r0 File: C:/Users/joey3/Desktop/ECE385/lab5/Synchronizers.sv Line: 18
+    Info (12023): Found entity 3: sync_r1 File: C:/Users/joey3/Desktop/ECE385/lab5/Synchronizers.sv Line: 39
+Info (12021): Found 1 design units, including 1 entities, in source file hexdriver.sv
+    Info (12023): Found entity 1: HexDriver File: C:/Users/joey3/Desktop/ECE385/lab5/HexDriver.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file register.sv
+    Info (12023): Found entity 1: reg_8 File: C:/Users/joey3/Desktop/ECE385/lab5/register.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file multiplier.sv
+    Info (12023): Found entity 1: multiplier File: C:/Users/joey3/Desktop/ECE385/lab5/multiplier.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file full_adder.sv
+    Info (12023): Found entity 1: full_adder File: C:/Users/joey3/Desktop/ECE385/lab5/full_adder.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file 9bitadder.sv
+    Info (12023): Found entity 1: ninebitadder File: C:/Users/joey3/Desktop/ECE385/lab5/9bitadder.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file control_unit.sv
     Info (12023): Found entity 1: control_unit File: C:/Users/joey3/Desktop/ECE385/lab5/control_unit.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file flip_flop.sv
+    Info (12023): Found entity 1: flip_flop File: C:/Users/joey3/Desktop/ECE385/lab5/flip_flop.sv Line: 1
 Error (12007): Top-level design entity "lab5" is undefined
 Error: Quartus Prime Analysis & Elaboration was unsuccessful. 1 error, 1 warning
-    Error: Peak virtual memory: 4728 megabytes
-    Error: Processing ended: Sun Sep 22 23:23:41 2019
-    Error: Elapsed time: 00:00:19
-    Error: Total CPU time (on all processors): 00:00:37
+    Error: Peak virtual memory: 4725 megabytes
+    Error: Processing ended: Mon Sep 23 19:25:53 2019
+    Error: Elapsed time: 00:00:24
+    Error: Total CPU time (on all processors): 00:00:48
 
 
