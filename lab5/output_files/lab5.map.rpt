@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lab5
-Tue Sep 24 01:18:20 2019
+Tue Sep 24 03:24:32 2019
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -17,12 +17,11 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
   9. Registers Removed During Synthesis
  10. General Register Statistics
  11. Multiplexer Restructuring Statistics (Restructuring Performed)
- 12. Port Connectivity Checks: "ninebitadder:adder|full_adder:FA8"
- 13. Port Connectivity Checks: "ninebitadder:adder"
- 14. Port Connectivity Checks: "reg_8:register_b"
- 15. Post-Synthesis Netlist Statistics for Top Partition
- 16. Elapsed Time Per Partition
- 17. Analysis & Synthesis Messages
+ 12. Port Connectivity Checks: "ninebitadder:adder|full_adder:fa08"
+ 13. Port Connectivity Checks: "reg_8:register_b"
+ 14. Post-Synthesis Netlist Statistics for Top Partition
+ 15. Elapsed Time Per Partition
+ 16. Analysis & Synthesis Messages
 
 
 
@@ -48,7 +47,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Sep 24 01:18:20 2019       ;
+; Analysis & Synthesis Status        ; Successful - Tue Sep 24 03:24:31 2019       ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; lab5                                        ;
 ; Top-level Entity Name              ; top_level                                   ;
@@ -156,32 +155,32 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 2           ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
+;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                            ;
-+----------------------------------+-----------------+------------------------------+-----------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                        ; Library ;
-+----------------------------------+-----------------+------------------------------+-----------------------------------------------------+---------+
-; Synchronizers.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/joey3/Desktop/ECE385/lab5/Synchronizers.sv ;         ;
-; HexDriver.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/joey3/Desktop/ECE385/lab5/HexDriver.sv     ;         ;
-; register.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/joey3/Desktop/ECE385/lab5/register.sv      ;         ;
-; full_adder.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/joey3/Desktop/ECE385/lab5/full_adder.sv    ;         ;
-; 9bitadder.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/joey3/Desktop/ECE385/lab5/9bitadder.sv     ;         ;
-; control_unit.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/joey3/Desktop/ECE385/lab5/control_unit.sv  ;         ;
-; flip_flop.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/joey3/Desktop/ECE385/lab5/flip_flop.sv     ;         ;
-; top_level.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/joey3/Desktop/ECE385/lab5/top_level.sv     ;         ;
-+----------------------------------+-----------------+------------------------------+-----------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                     ;
++----------------------------------+-----------------+------------------------------+------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path ; Library ;
++----------------------------------+-----------------+------------------------------+------------------------------+---------+
+; Synchronizers.sv                 ; yes             ; User SystemVerilog HDL File  ; E:/lab5/Synchronizers.sv     ;         ;
+; HexDriver.sv                     ; yes             ; User SystemVerilog HDL File  ; E:/lab5/HexDriver.sv         ;         ;
+; register.sv                      ; yes             ; User SystemVerilog HDL File  ; E:/lab5/register.sv          ;         ;
+; full_adder.sv                    ; yes             ; User SystemVerilog HDL File  ; E:/lab5/full_adder.sv        ;         ;
+; 9bitadder.sv                     ; yes             ; User SystemVerilog HDL File  ; E:/lab5/9bitadder.sv         ;         ;
+; control_unit.sv                  ; yes             ; User SystemVerilog HDL File  ; E:/lab5/control_unit.sv      ;         ;
+; flip_flop.sv                     ; yes             ; User SystemVerilog HDL File  ; E:/lab5/flip_flop.sv         ;         ;
+; top_level.sv                     ; yes             ; User SystemVerilog HDL File  ; E:/lab5/top_level.sv         ;         ;
++----------------------------------+-----------------+------------------------------+------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -211,39 +210,39 @@ refer to the applicable agreement for further details.
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
 ; Maximum fan-out                             ; 39        ;
-; Total fan-out                               ; 508       ;
-; Average fan-out                             ; 2.20      ;
+; Total fan-out                               ; 492       ;
+; Average fan-out                             ; 2.13      ;
 +---------------------------------------------+-----------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                  ;
-+------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------+--------------+--------------+
-; Compilation Hierarchy Node   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                          ; Entity Name  ; Library Name ;
-+------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------+--------------+--------------+
-; |top_level                   ; 78 (4)              ; 39 (0)                    ; 0           ; 0            ; 0       ; 0         ; 57   ; 0            ; |top_level                                   ; top_level    ; work         ;
-;    |HexDriver:HexAL|         ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|HexDriver:HexAL                   ; HexDriver    ; work         ;
-;    |HexDriver:HexAU|         ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|HexDriver:HexAU                   ; HexDriver    ; work         ;
-;    |HexDriver:HexBL|         ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|HexDriver:HexBL                   ; HexDriver    ; work         ;
-;    |HexDriver:HexBU|         ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|HexDriver:HexBU                   ; HexDriver    ; work         ;
-;    |control_unit:controller| ; 7 (7)               ; 19 (19)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|control_unit:controller           ; control_unit ; work         ;
-;    |flip_flop:flipflop|      ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|flip_flop:flipflop                ; flip_flop    ; work         ;
-;    |ninebitadder:adder|      ; 16 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|ninebitadder:adder                ; ninebitadder ; work         ;
-;       |full_adder:FA0|       ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|ninebitadder:adder|full_adder:FA0 ; full_adder   ; work         ;
-;       |full_adder:FA1|       ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|ninebitadder:adder|full_adder:FA1 ; full_adder   ; work         ;
-;       |full_adder:FA2|       ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|ninebitadder:adder|full_adder:FA2 ; full_adder   ; work         ;
-;       |full_adder:FA3|       ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|ninebitadder:adder|full_adder:FA3 ; full_adder   ; work         ;
-;       |full_adder:FA4|       ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|ninebitadder:adder|full_adder:FA4 ; full_adder   ; work         ;
-;       |full_adder:FA5|       ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|ninebitadder:adder|full_adder:FA5 ; full_adder   ; work         ;
-;       |full_adder:FA6|       ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|ninebitadder:adder|full_adder:FA6 ; full_adder   ; work         ;
-;       |full_adder:FA7|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|ninebitadder:adder|full_adder:FA7 ; full_adder   ; work         ;
-;       |full_adder:FA8|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|ninebitadder:adder|full_adder:FA8 ; full_adder   ; work         ;
-;    |reg_8:register_a|        ; 10 (10)             ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|reg_8:register_a                  ; reg_8        ; work         ;
-;    |reg_8:register_b|        ; 9 (9)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|reg_8:register_b                  ; reg_8        ; work         ;
-;    |sync:button_sync[0]|     ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|sync:button_sync[0]               ; sync         ; work         ;
-;    |sync:button_sync[1]|     ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|sync:button_sync[1]               ; sync         ; work         ;
-;    |sync:button_sync[2]|     ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|sync:button_sync[2]               ; sync         ; work         ;
-+------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------+--------------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                   ;
++------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------+--------------+--------------+
+; Compilation Hierarchy Node   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                           ; Entity Name  ; Library Name ;
++------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------+--------------+--------------+
+; |top_level                   ; 78 (5)              ; 39 (0)                    ; 0           ; 0            ; 0       ; 0         ; 57   ; 0            ; |top_level                                    ; top_level    ; work         ;
+;    |HexDriver:HexAL|         ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|HexDriver:HexAL                    ; HexDriver    ; work         ;
+;    |HexDriver:HexAU|         ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|HexDriver:HexAU                    ; HexDriver    ; work         ;
+;    |HexDriver:HexBL|         ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|HexDriver:HexBL                    ; HexDriver    ; work         ;
+;    |HexDriver:HexBU|         ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|HexDriver:HexBU                    ; HexDriver    ; work         ;
+;    |control_unit:controller| ; 6 (6)               ; 19 (19)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|control_unit:controller            ; control_unit ; work         ;
+;    |flip_flop:flipflop|      ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|flip_flop:flipflop                 ; flip_flop    ; work         ;
+;    |ninebitadder:adder|      ; 16 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|ninebitadder:adder                 ; ninebitadder ; work         ;
+;       |full_adder:fa00|      ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|ninebitadder:adder|full_adder:fa00 ; full_adder   ; work         ;
+;       |full_adder:fa01|      ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|ninebitadder:adder|full_adder:fa01 ; full_adder   ; work         ;
+;       |full_adder:fa02|      ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|ninebitadder:adder|full_adder:fa02 ; full_adder   ; work         ;
+;       |full_adder:fa03|      ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|ninebitadder:adder|full_adder:fa03 ; full_adder   ; work         ;
+;       |full_adder:fa04|      ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|ninebitadder:adder|full_adder:fa04 ; full_adder   ; work         ;
+;       |full_adder:fa05|      ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|ninebitadder:adder|full_adder:fa05 ; full_adder   ; work         ;
+;       |full_adder:fa06|      ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|ninebitadder:adder|full_adder:fa06 ; full_adder   ; work         ;
+;       |full_adder:fa07|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|ninebitadder:adder|full_adder:fa07 ; full_adder   ; work         ;
+;       |full_adder:fa08|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|ninebitadder:adder|full_adder:fa08 ; full_adder   ; work         ;
+;    |reg_8:register_a|        ; 10 (10)             ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|reg_8:register_a                   ; reg_8        ; work         ;
+;    |reg_8:register_b|        ; 9 (9)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|reg_8:register_b                   ; reg_8        ; work         ;
+;    |sync:button_sync[0]|     ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|sync:button_sync[0]                ; sync         ; work         ;
+;    |sync:button_sync[1]|     ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|sync:button_sync[1]                ; sync         ; work         ;
+;    |sync:button_sync[2]|     ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|sync:button_sync[2]                ; sync         ; work         ;
++------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------+--------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -314,22 +313,13 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------+
 
 
-+---------------------------------------------------------------+
-; Port Connectivity Checks: "ninebitadder:adder|full_adder:FA8" ;
-+------+--------+----------+------------------------------------+
-; Port ; Type   ; Severity ; Details                            ;
-+------+--------+----------+------------------------------------+
-; cout ; Output ; Info     ; Explicitly unconnected             ;
-+------+--------+----------+------------------------------------+
-
-
-+---------------------------------------------------+
-; Port Connectivity Checks: "ninebitadder:adder"    ;
-+------+--------+----------+------------------------+
-; Port ; Type   ; Severity ; Details                ;
-+------+--------+----------+------------------------+
-; cout ; Output ; Info     ; Explicitly unconnected ;
-+------+--------+----------+------------------------+
++----------------------------------------------------------------+
+; Port Connectivity Checks: "ninebitadder:adder|full_adder:fa08" ;
++------+--------+----------+-------------------------------------+
+; Port ; Type   ; Severity ; Details                             ;
++------+--------+----------+-------------------------------------+
+; cout ; Output ; Info     ; Explicitly unconnected              ;
++------+--------+----------+-------------------------------------+
 
 
 +--------------------------------------------------------+
@@ -352,15 +342,16 @@ Encoding Type:  One-Hot
 ;     ENA               ; 8                           ;
 ;     ENA SCLR          ; 8                           ;
 ;     plain             ; 3                           ;
-; cycloneiii_lcell_comb ; 82                          ;
-;     normal            ; 82                          ;
+; cycloneiii_lcell_comb ; 83                          ;
+;     normal            ; 83                          ;
+;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 7                           ;
 ;         2 data inputs ; 4                           ;
 ;         3 data inputs ; 11                          ;
 ;         4 data inputs ; 60                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 9.00                        ;
-; Average LUT depth     ; 3.33                        ;
+; Average LUT depth     ; 3.25                        ;
 +-----------------------+-----------------------------+
 
 
@@ -369,7 +360,7 @@ Encoding Type:  One-Hot
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -379,39 +370,58 @@ Encoding Type:  One-Hot
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Tue Sep 24 01:18:02 2019
+    Info: Processing started: Tue Sep 24 03:24:14 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab5 -c lab5
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 3 design units, including 3 entities, in source file synchronizers.sv
-    Info (12023): Found entity 1: sync File: C:/Users/joey3/Desktop/ECE385/lab5/Synchronizers.sv Line: 4
-    Info (12023): Found entity 2: sync_r0 File: C:/Users/joey3/Desktop/ECE385/lab5/Synchronizers.sv Line: 18
-    Info (12023): Found entity 3: sync_r1 File: C:/Users/joey3/Desktop/ECE385/lab5/Synchronizers.sv Line: 39
+    Info (12023): Found entity 1: sync File: E:/lab5/Synchronizers.sv Line: 4
+    Info (12023): Found entity 2: sync_r0 File: E:/lab5/Synchronizers.sv Line: 18
+    Info (12023): Found entity 3: sync_r1 File: E:/lab5/Synchronizers.sv Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file hexdriver.sv
-    Info (12023): Found entity 1: HexDriver File: C:/Users/joey3/Desktop/ECE385/lab5/HexDriver.sv Line: 1
+    Info (12023): Found entity 1: HexDriver File: E:/lab5/HexDriver.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file register.sv
-    Info (12023): Found entity 1: reg_8 File: C:/Users/joey3/Desktop/ECE385/lab5/register.sv Line: 1
+    Info (12023): Found entity 1: reg_8 File: E:/lab5/register.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file multiplier.sv
-    Info (12023): Found entity 1: multiplier File: C:/Users/joey3/Desktop/ECE385/lab5/multiplier.sv Line: 1
+    Info (12023): Found entity 1: multiplier File: E:/lab5/multiplier.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file full_adder.sv
-    Info (12023): Found entity 1: full_adder File: C:/Users/joey3/Desktop/ECE385/lab5/full_adder.sv Line: 1
+    Info (12023): Found entity 1: full_adder File: E:/lab5/full_adder.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file 9bitadder.sv
-    Info (12023): Found entity 1: ninebitadder File: C:/Users/joey3/Desktop/ECE385/lab5/9bitadder.sv Line: 1
+    Info (12023): Found entity 1: ninebitadder File: E:/lab5/9bitadder.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file control_unit.sv
-    Info (12023): Found entity 1: control_unit File: C:/Users/joey3/Desktop/ECE385/lab5/control_unit.sv Line: 1
+    Info (12023): Found entity 1: control_unit File: E:/lab5/control_unit.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file flip_flop.sv
-    Info (12023): Found entity 1: flip_flop File: C:/Users/joey3/Desktop/ECE385/lab5/flip_flop.sv Line: 2
+    Info (12023): Found entity 1: flip_flop File: E:/lab5/flip_flop.sv Line: 2
+Warning (10275): Verilog HDL Module Instantiation warning at top_level.sv(51): ignored dangling comma in List of Port Connections File: E:/lab5/top_level.sv Line: 51
 Info (12021): Found 1 design units, including 1 entities, in source file top_level.sv
-    Info (12023): Found entity 1: top_level File: C:/Users/joey3/Desktop/ECE385/lab5/top_level.sv Line: 1
+    Info (12023): Found entity 1: top_level File: E:/lab5/top_level.sv Line: 1
 Info (12127): Elaborating entity "top_level" for the top level hierarchy
-Info (12128): Elaborating entity "reg_8" for hierarchy "reg_8:register_a" File: C:/Users/joey3/Desktop/ECE385/lab5/top_level.sv Line: 37
-Info (12128): Elaborating entity "ninebitadder" for hierarchy "ninebitadder:adder" File: C:/Users/joey3/Desktop/ECE385/lab5/top_level.sv Line: 57
-Warning (10034): Output port "cout" at 9bitadder.sv(8) has no driver File: C:/Users/joey3/Desktop/ECE385/lab5/9bitadder.sv Line: 8
-Info (12128): Elaborating entity "full_adder" for hierarchy "ninebitadder:adder|full_adder:FA0" File: C:/Users/joey3/Desktop/ECE385/lab5/9bitadder.sv Line: 19
-Info (12128): Elaborating entity "flip_flop" for hierarchy "flip_flop:flipflop" File: C:/Users/joey3/Desktop/ECE385/lab5/top_level.sv Line: 65
-Info (12128): Elaborating entity "control_unit" for hierarchy "control_unit:controller" File: C:/Users/joey3/Desktop/ECE385/lab5/top_level.sv Line: 77
-Info (12128): Elaborating entity "HexDriver" for hierarchy "HexDriver:HexAL" File: C:/Users/joey3/Desktop/ECE385/lab5/top_level.sv Line: 82
-Info (12128): Elaborating entity "sync" for hierarchy "sync:button_sync[0]" File: C:/Users/joey3/Desktop/ECE385/lab5/top_level.sv Line: 96
+Warning (10034): Output port "aval" at top_level.sv(8) has no driver File: E:/lab5/top_level.sv Line: 8
+Warning (10034): Output port "bval" at top_level.sv(8) has no driver File: E:/lab5/top_level.sv Line: 8
+Info (12128): Elaborating entity "reg_8" for hierarchy "reg_8:register_a" File: E:/lab5/top_level.sv Line: 33
+Info (12128): Elaborating entity "ninebitadder" for hierarchy "ninebitadder:adder" File: E:/lab5/top_level.sv Line: 51
+Info (12128): Elaborating entity "full_adder" for hierarchy "ninebitadder:adder|full_adder:fa00" File: E:/lab5/9bitadder.sv Line: 13
+Info (12128): Elaborating entity "flip_flop" for hierarchy "flip_flop:flipflop" File: E:/lab5/top_level.sv Line: 59
+Info (12128): Elaborating entity "control_unit" for hierarchy "control_unit:controller" File: E:/lab5/top_level.sv Line: 71
+Info (12128): Elaborating entity "HexDriver" for hierarchy "HexDriver:HexAL" File: E:/lab5/top_level.sv Line: 76
+Info (12128): Elaborating entity "sync" for hierarchy "sync:button_sync[0]" File: E:/lab5/top_level.sv Line: 90
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "aval[0]" is stuck at GND File: E:/lab5/top_level.sv Line: 8
+    Warning (13410): Pin "aval[1]" is stuck at GND File: E:/lab5/top_level.sv Line: 8
+    Warning (13410): Pin "aval[2]" is stuck at GND File: E:/lab5/top_level.sv Line: 8
+    Warning (13410): Pin "aval[3]" is stuck at GND File: E:/lab5/top_level.sv Line: 8
+    Warning (13410): Pin "aval[4]" is stuck at GND File: E:/lab5/top_level.sv Line: 8
+    Warning (13410): Pin "aval[5]" is stuck at GND File: E:/lab5/top_level.sv Line: 8
+    Warning (13410): Pin "aval[6]" is stuck at GND File: E:/lab5/top_level.sv Line: 8
+    Warning (13410): Pin "aval[7]" is stuck at GND File: E:/lab5/top_level.sv Line: 8
+    Warning (13410): Pin "bval[0]" is stuck at GND File: E:/lab5/top_level.sv Line: 8
+    Warning (13410): Pin "bval[1]" is stuck at GND File: E:/lab5/top_level.sv Line: 8
+    Warning (13410): Pin "bval[2]" is stuck at GND File: E:/lab5/top_level.sv Line: 8
+    Warning (13410): Pin "bval[3]" is stuck at GND File: E:/lab5/top_level.sv Line: 8
+    Warning (13410): Pin "bval[4]" is stuck at GND File: E:/lab5/top_level.sv Line: 8
+    Warning (13410): Pin "bval[5]" is stuck at GND File: E:/lab5/top_level.sv Line: 8
+    Warning (13410): Pin "bval[6]" is stuck at GND File: E:/lab5/top_level.sv Line: 8
+    Warning (13410): Pin "bval[7]" is stuck at GND File: E:/lab5/top_level.sv Line: 8
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 5 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
@@ -420,10 +430,10 @@ Info (21057): Implemented 151 device resources after synthesis - the final resou
     Info (21058): Implemented 12 input pins
     Info (21059): Implemented 45 output pins
     Info (21061): Implemented 94 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4762 megabytes
-    Info: Processing ended: Tue Sep 24 01:18:20 2019
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 21 warnings
+    Info: Peak virtual memory: 4791 megabytes
+    Info: Processing ended: Tue Sep 24 03:24:32 2019
     Info: Elapsed time: 00:00:18
-    Info: Total CPU time (on all processors): 00:00:37
+    Info: Total CPU time (on all processors): 00:00:24
 
 

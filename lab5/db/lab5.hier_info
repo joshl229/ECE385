@@ -11,51 +11,51 @@ s[7] => s[7].IN2
 reset => sync:button_sync[2].d
 run => sync:button_sync[0].d
 cleara_loadb => sync:button_sync[1].d
-ahexu[0] <= HexDriver:HexAU.Out0
-ahexu[1] <= HexDriver:HexAU.Out0
-ahexu[2] <= HexDriver:HexAU.Out0
-ahexu[3] <= HexDriver:HexAU.Out0
-ahexu[4] <= HexDriver:HexAU.Out0
-ahexu[5] <= HexDriver:HexAU.Out0
-ahexu[6] <= HexDriver:HexAU.Out0
-ahexl[0] <= HexDriver:HexAL.Out0
-ahexl[1] <= HexDriver:HexAL.Out0
-ahexl[2] <= HexDriver:HexAL.Out0
-ahexl[3] <= HexDriver:HexAL.Out0
-ahexl[4] <= HexDriver:HexAL.Out0
-ahexl[5] <= HexDriver:HexAL.Out0
-ahexl[6] <= HexDriver:HexAL.Out0
-bhexu[0] <= HexDriver:HexBU.Out0
-bhexu[1] <= HexDriver:HexBU.Out0
-bhexu[2] <= HexDriver:HexBU.Out0
-bhexu[3] <= HexDriver:HexBU.Out0
-bhexu[4] <= HexDriver:HexBU.Out0
-bhexu[5] <= HexDriver:HexBU.Out0
-bhexu[6] <= HexDriver:HexBU.Out0
-bhexl[0] <= HexDriver:HexBL.Out0
-bhexl[1] <= HexDriver:HexBL.Out0
-bhexl[2] <= HexDriver:HexBL.Out0
-bhexl[3] <= HexDriver:HexBL.Out0
-bhexl[4] <= HexDriver:HexBL.Out0
-bhexl[5] <= HexDriver:HexBL.Out0
-bhexl[6] <= HexDriver:HexBL.Out0
-aval[0] <= A[0].DB_MAX_OUTPUT_PORT_TYPE
-aval[1] <= A[1].DB_MAX_OUTPUT_PORT_TYPE
-aval[2] <= A[2].DB_MAX_OUTPUT_PORT_TYPE
-aval[3] <= A[3].DB_MAX_OUTPUT_PORT_TYPE
-aval[4] <= A[4].DB_MAX_OUTPUT_PORT_TYPE
-aval[5] <= A[5].DB_MAX_OUTPUT_PORT_TYPE
-aval[6] <= A[6].DB_MAX_OUTPUT_PORT_TYPE
-aval[7] <= A[7].DB_MAX_OUTPUT_PORT_TYPE
-bval[0] <= B[0].DB_MAX_OUTPUT_PORT_TYPE
-bval[1] <= B[1].DB_MAX_OUTPUT_PORT_TYPE
-bval[2] <= B[2].DB_MAX_OUTPUT_PORT_TYPE
-bval[3] <= B[3].DB_MAX_OUTPUT_PORT_TYPE
-bval[4] <= B[4].DB_MAX_OUTPUT_PORT_TYPE
-bval[5] <= B[5].DB_MAX_OUTPUT_PORT_TYPE
-bval[6] <= B[6].DB_MAX_OUTPUT_PORT_TYPE
-bval[7] <= B[7].DB_MAX_OUTPUT_PORT_TYPE
-xbit <= xbit.DB_MAX_OUTPUT_PORT_TYPE
+ahexu[0] << HexDriver:HexAU.Out0
+ahexu[1] << HexDriver:HexAU.Out0
+ahexu[2] << HexDriver:HexAU.Out0
+ahexu[3] << HexDriver:HexAU.Out0
+ahexu[4] << HexDriver:HexAU.Out0
+ahexu[5] << HexDriver:HexAU.Out0
+ahexu[6] << HexDriver:HexAU.Out0
+ahexl[0] << HexDriver:HexAL.Out0
+ahexl[1] << HexDriver:HexAL.Out0
+ahexl[2] << HexDriver:HexAL.Out0
+ahexl[3] << HexDriver:HexAL.Out0
+ahexl[4] << HexDriver:HexAL.Out0
+ahexl[5] << HexDriver:HexAL.Out0
+ahexl[6] << HexDriver:HexAL.Out0
+bhexu[0] << HexDriver:HexBU.Out0
+bhexu[1] << HexDriver:HexBU.Out0
+bhexu[2] << HexDriver:HexBU.Out0
+bhexu[3] << HexDriver:HexBU.Out0
+bhexu[4] << HexDriver:HexBU.Out0
+bhexu[5] << HexDriver:HexBU.Out0
+bhexu[6] << HexDriver:HexBU.Out0
+bhexl[0] << HexDriver:HexBL.Out0
+bhexl[1] << HexDriver:HexBL.Out0
+bhexl[2] << HexDriver:HexBL.Out0
+bhexl[3] << HexDriver:HexBL.Out0
+bhexl[4] << HexDriver:HexBL.Out0
+bhexl[5] << HexDriver:HexBL.Out0
+bhexl[6] << HexDriver:HexBL.Out0
+aval[0] << <GND>
+aval[1] << <GND>
+aval[2] << <GND>
+aval[3] << <GND>
+aval[4] << <GND>
+aval[5] << <GND>
+aval[6] << <GND>
+aval[7] << <GND>
+bval[0] << <GND>
+bval[1] << <GND>
+bval[2] << <GND>
+bval[3] << <GND>
+bval[4] << <GND>
+bval[5] << <GND>
+bval[6] << <GND>
+bval[7] << <GND>
+xbit << xbit.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |top_level|reg_8:register_a
@@ -172,30 +172,28 @@ A[3] => A[3].IN1
 A[4] => A[4].IN1
 A[5] => A[5].IN1
 A[6] => A[6].IN1
-A[7] => A9.IN2
-B[0] => BB.IN0
-B[1] => BB.IN0
-B[2] => BB.IN0
-B[3] => BB.IN0
-B[4] => BB.IN0
-B[5] => BB.IN0
-B[6] => BB.IN0
-B[7] => BB.IN0
-cin => ~NO_FANOUT~
-fn => fn.IN1
-sum[0] <= full_adder:FA0.s
-sum[1] <= full_adder:FA1.s
-sum[2] <= full_adder:FA2.s
-sum[3] <= full_adder:FA3.s
-sum[4] <= full_adder:FA4.s
-sum[5] <= full_adder:FA5.s
-sum[6] <= full_adder:FA6.s
-sum[7] <= full_adder:FA7.s
-sum[8] <= full_adder:FA8.s
-cout <= <GND>
+A[7] => A[7].IN2
+B[0] => Bm.IN0
+B[1] => Bm.IN0
+B[2] => Bm.IN0
+B[3] => Bm.IN0
+B[4] => Bm.IN0
+B[5] => Bm.IN0
+B[6] => Bm.IN0
+B[7] => Bm.IN0
+cin => cin.IN1
+sum[0] <= full_adder:fa00.s
+sum[1] <= full_adder:fa01.s
+sum[2] <= full_adder:fa02.s
+sum[3] <= full_adder:fa03.s
+sum[4] <= full_adder:fa04.s
+sum[5] <= full_adder:fa05.s
+sum[6] <= full_adder:fa06.s
+sum[7] <= full_adder:fa07.s
+sum[8] <= full_adder:fa08.s
 
 
-|top_level|ninebitadder:adder|full_adder:FA0
+|top_level|ninebitadder:adder|full_adder:fa00
 x => s.IN0
 x => cout.IN0
 x => cout.IN0
@@ -209,7 +207,7 @@ s <= s.DB_MAX_OUTPUT_PORT_TYPE
 cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|top_level|ninebitadder:adder|full_adder:FA1
+|top_level|ninebitadder:adder|full_adder:fa01
 x => s.IN0
 x => cout.IN0
 x => cout.IN0
@@ -223,7 +221,7 @@ s <= s.DB_MAX_OUTPUT_PORT_TYPE
 cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|top_level|ninebitadder:adder|full_adder:FA2
+|top_level|ninebitadder:adder|full_adder:fa02
 x => s.IN0
 x => cout.IN0
 x => cout.IN0
@@ -237,7 +235,7 @@ s <= s.DB_MAX_OUTPUT_PORT_TYPE
 cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|top_level|ninebitadder:adder|full_adder:FA3
+|top_level|ninebitadder:adder|full_adder:fa03
 x => s.IN0
 x => cout.IN0
 x => cout.IN0
@@ -251,7 +249,7 @@ s <= s.DB_MAX_OUTPUT_PORT_TYPE
 cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|top_level|ninebitadder:adder|full_adder:FA4
+|top_level|ninebitadder:adder|full_adder:fa04
 x => s.IN0
 x => cout.IN0
 x => cout.IN0
@@ -265,7 +263,7 @@ s <= s.DB_MAX_OUTPUT_PORT_TYPE
 cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|top_level|ninebitadder:adder|full_adder:FA5
+|top_level|ninebitadder:adder|full_adder:fa05
 x => s.IN0
 x => cout.IN0
 x => cout.IN0
@@ -279,7 +277,7 @@ s <= s.DB_MAX_OUTPUT_PORT_TYPE
 cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|top_level|ninebitadder:adder|full_adder:FA6
+|top_level|ninebitadder:adder|full_adder:fa06
 x => s.IN0
 x => cout.IN0
 x => cout.IN0
@@ -293,7 +291,7 @@ s <= s.DB_MAX_OUTPUT_PORT_TYPE
 cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|top_level|ninebitadder:adder|full_adder:FA7
+|top_level|ninebitadder:adder|full_adder:fa07
 x => s.IN0
 x => cout.IN0
 x => cout.IN0
@@ -307,7 +305,7 @@ s <= s.DB_MAX_OUTPUT_PORT_TYPE
 cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|top_level|ninebitadder:adder|full_adder:FA8
+|top_level|ninebitadder:adder|full_adder:fa08
 x => s.IN0
 x => cout.IN0
 x => cout.IN0

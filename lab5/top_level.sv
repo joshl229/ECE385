@@ -18,11 +18,7 @@ logic[8:0] XA; // 9 bit extended A
 logic reset_sh, run_sh, cleara_loadb_sh; // inputs from switches
 logic clr_ld_s, shift_s, add_s, sub_s; // outputs from control logic 
 logic b_in;
-logic m;
 
-// Combinational logic 
-assign aval = A; // connect Aval to A
-assign bval = B; // Connect Bval to B
 
 // Instantiation of modules
 reg_8 register_a (
@@ -40,7 +36,7 @@ reg_8 register_b (
 			.Clk(clk),
 			.Reset(reset_sh),
 			.Shift_In(b_in),
-			.Load(clr_ld_s),
+			.Load(cleara_loadb_sh),
 			.Shift_En(shift_s),
 			.Data_In(s),
 			.Shift_Out(),
@@ -52,8 +48,6 @@ ninebitadder adder(
 		.B(s),
 		.cin(sub_s),
 		.sum(XA),
-		.fn(sub_s),
-		.cout()
 		);
 
 flip_flop flipflop(
