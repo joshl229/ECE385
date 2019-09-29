@@ -1,20 +1,20 @@
 module ALU (input  logic [15:0] A, B,
 			input  logic [1:0]  ALUK,
 			output logic [15:0] OUTPUT);
-				
+
 		always_comb
 		begin
-			case (Select)
-			
+			case (ALUK)
+
 				2'b00:
-					OUT = A + B;	
+					OUT = A + B;
 				2'b01:
 					OUT = A & B;
 				2'b10:
-					OUT = ~A;	
+					OUT = ~A;
 				2'b11:
-					OUT = A;	
+					OUT = A;
 			endcase
 		end
-		
+
 endmodule
