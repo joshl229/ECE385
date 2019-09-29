@@ -7,13 +7,13 @@ module ALU (input  logic [15:0] A, B,
 			case (ALUK)
 
 				2'b00:
-					OUT = A + B;
+					OUTPUT = A + B;
 				2'b01:
-					OUT = A & B;
+					OUTPUT = A & B;
 				2'b10:
-					OUT = ~A;
+					OUTPUT = ~A;
 				2'b11:
-					OUT = A;
+					OUTPUT = A;
 			endcase
 		end
 
