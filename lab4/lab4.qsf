@@ -42,11 +42,6 @@ set_global_assignment -name TOP_LEVEL_ENTITY lab4_adders_toplevel
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.0.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "04:55:46  SEPTEMBER 17, 2019"
 set_global_assignment -name LAST_QUARTUS_VERSION "18.0.0 Lite Edition"
-set_global_assignment -name SYSTEMVERILOG_FILE ../../Users/joey3/Desktop/lab4/ripple_adder.sv
-set_global_assignment -name SYSTEMVERILOG_FILE ../../Users/joey3/Desktop/lab4/lab4_adders_toplevel.sv
-set_global_assignment -name SYSTEMVERILOG_FILE ../../Users/joey3/Desktop/lab4/HexDriver.sv
-set_global_assignment -name SYSTEMVERILOG_FILE ../../Users/joey3/Desktop/lab4/carry_select_adder.sv
-set_global_assignment -name SYSTEMVERILOG_FILE ../../Users/joey3/Desktop/lab4/carry_lookahead_adder.sv
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
@@ -151,4 +146,11 @@ set_location_assignment PIN_AD27 -to SW[3]
 set_location_assignment PIN_AC27 -to SW[2]
 set_location_assignment PIN_AC28 -to SW[1]
 set_location_assignment PIN_AB28 -to SW[0]
+set_global_assignment -name SYSTEMVERILOG_FILE lab4/ripple_adder.sv
+set_global_assignment -name SYSTEMVERILOG_FILE lab4/lab4_adders_toplevel.sv
+set_global_assignment -name SYSTEMVERILOG_FILE lab4/HexDriver.sv
+set_global_assignment -name SYSTEMVERILOG_FILE lab4/carry_select_adder.sv
+set_global_assignment -name SYSTEMVERILOG_FILE lab4/carry_lookahead_adder.sv
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
