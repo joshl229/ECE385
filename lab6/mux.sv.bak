@@ -1,0 +1,23 @@
+module PCMUX (
+					input logic [15:0] ADDER,
+					input logic [15:0] BUS,
+					input logic [15:0] PC1,
+					input logic [0:1] Select,
+					output logic [15:0] Output
+					);
+					
+always_comb 
+	begin:
+	case(Select)
+	
+	2'b00:
+	Output = PC1;
+	
+	2'b01:
+	Output = BUS;
+	
+	2'b10:
+	Output = ADDER;
+	endcase
+
+endmodule
