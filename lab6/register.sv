@@ -63,6 +63,7 @@ logic [7:0][15:0] regout;
 				case(SR1in) 
 						3'b000: SR1out <= regout[0];
 						3'b001: SR1out <= regout[1];
+						
 						3'b010: SR1out <= regout[2];
 						3'b011: SR1out <= regout[3];
 
@@ -83,7 +84,7 @@ logic [7:0][15:0] regout;
 						3'b010: SR2out <= regout[2];
 						3'b011: SR2out <= regout[3];
 						3'b100: SR2out <= regout[4];
-						
+
 						3'b101: SR2out <= regout[5];
 						3'b110: SR2out <= regout[6];
 
