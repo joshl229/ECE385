@@ -112,9 +112,9 @@ always_comb
 endmodule 
 
 module m_ADDR2MUX (
-							input logic [15:0] offset6,
-							input logic [15:0] PCoffset9,
-							input logic [15:0] PCoffset11,
+							input logic [15:0] IRoffset6,
+							input logic [15:0] IRoffset9,
+							input logic [15:0] IRoffset11,
 							input logic [1:0] Select,
 							output logic [15:0] Output
 						);
@@ -126,11 +126,11 @@ always_comb
 		2'b00:
 			Output = 16'b0000000000000000;
 		2'b01:
-			Output = offset6;
+			Output = IRoffset6;
 		2'b10:
-			Output = PCoffset9;
+			Output = IRoffset9;
 		2'b11:
-			Output = PCoffset11;
+			Output = IRoffset11;
 			
 		endcase
 	end
