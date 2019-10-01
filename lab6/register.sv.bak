@@ -17,9 +17,9 @@ endmodule
 
 
 module eightreg16(input logic Clk, Reset, Load,
-						input logic [15:0] DataIn,
-						input logic [2:0] SR1in, SR2in, DRIN,
-						output logic [15:0] SR2out, SR1out);
+						input [15:0] DataIn,
+						input [2:0] SR1in, SR2in, DRIN,
+						output [15:0] SR2out, SR1out);
 
 logic [7:0][15:0] regout;
 
@@ -113,19 +113,7 @@ module flipflop (input logic Clk, Reset, Load, DataIn,
 endmodule
 
 
-module NZP(input logic Clk, NIN, ZIN, PIN, LD_CC,
-			  output logic NOUT, ZOUT, POUT);
-			  
-always_ff @ (posedge Clk)
-				begin
-					if(LD_CC)
-						begin
-							NOUT <= NIN;
-							ZOUT <= ZIN;
-							POUT <= PIN;
-						end
-				end
-endmodule 
+
 
 
 

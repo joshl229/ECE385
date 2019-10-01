@@ -1,7 +1,7 @@
-Analysis & Elaboration Status : Failed - Sun Sep 29 23:08:35 2019
+Analysis & Elaboration Status : Successful - Mon Sep 30 21:49:14 2019
 Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 Revision Name : lab6
-Top-level Entity Name : lab6
+Top-level Entity Name : lab6_toplevel
 Family : Cyclone IV E
 Total logic elements : N/A until Partition Merge
     Total combinational functions : N/A until Partition Merge

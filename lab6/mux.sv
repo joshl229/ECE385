@@ -137,4 +137,51 @@ always_comb
 	
 endmodule 
 							
-							
+module m_MDRMUX (
+						input logic [15:0] BUS, 
+						input logic [15:0] MEM2IO,
+						input logic Select,
+						output logic [15:0] Output
+					);
+					
+always_comb
+	begin
+		case(Select)
+		
+		1'b0:
+			Output = BUS;
+		1'b1:
+			Output = MEM2IO;
+			
+		endcase
+	end
+endmodule 
+
+module m_GATES (
+						input logic GateALU,
+						input logic GateMARMUX,
+						input logic GateMDR,
+						input logic GatePC,
+						input logic [3:0] Select,
+						output logic Output
+					);
+					
+always_comb
+	begin
+		case(Select)
+		
+		4'b1000:
+			Output = GateALU;
+		4'b0100:
+			Output = GateMARMUX;
+		4'b0010:
+			Output = GateMDR;
+		4'b0001:
+			Output = GatePC;
+		default:
+			Output = 16'b000000000000;
+			
+		endcase
+	end
+endmodule
+
