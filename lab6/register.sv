@@ -1,17 +1,17 @@
-module register16 (input logic Clk, Reset, Load, 
-					input [15:0] DataIn,
-					output [15:0] DataOut);
+module register16 (input logic Clk, Reset, Load,
+					input logic [15:0] DataIn,
+					output logic [15:0] DataOut);
 
 	always_ff @ (posedge Clk)
 	begin
-		if (Reset)
-			DataOut = 16'h0;
+		if (~Reset)
+			DataOut <= 16'h0;
 
 		else if (Load)
-			DataOut = DataIn;
+			DataOut <= DataIn;
 	end
 
-endmodule 
+endmodule
 
 
 
@@ -40,7 +40,7 @@ logic [7:0][15:0] regout;
 						3'b111: regout[7] = DataIn;
 						default;
 					endcase
-				else if (Reset)	
+				else if (Reset)
 					begin
 						regout[0] = 16'h0;
 
@@ -58,12 +58,12 @@ logic [7:0][15:0] regout;
 
 			end
 
-			always_comb 
-			begin	
-				case(SR1in) 
+			always_comb
+			begin
+				case(SR1in)
 						3'b000: SR1out <= regout[0];
 						3'b001: SR1out <= regout[1];
-						
+
 						3'b010: SR1out <= regout[2];
 						3'b011: SR1out <= regout[3];
 
@@ -76,8 +76,8 @@ logic [7:0][15:0] regout;
 						default;
 				endcase
 
-				
-				case(SR2in) 
+
+				case(SR2in)
 						3'b000: SR2out <= regout[0];
 						3'b001: SR2out <= regout[1];
 
@@ -103,11 +103,11 @@ module flipflop (input logic Clk, Reset, Load, DataIn,
 
     always_ff @ (posedge Clk)
     begin
-	 	 if (Reset) 
+	 	 if (Reset)
 			  DataOut = 1'h0;
 		 else if (Load)
 			  DataOut = DataIn;
-		
+
     end
 
 endmodule
@@ -115,7 +115,7 @@ endmodule
 
 module NZP(input logic Clk, NIN, ZIN, PIN, LD_CC,
 			  output logic NOUT, ZOUT, POUT);
-			  
+
 always_ff @ (posedge Clk)
 				begin
 					if(LD_CC)
@@ -125,7 +125,4 @@ always_ff @ (posedge Clk)
 							POUT <= PIN;
 						end
 				end
-endmodule 
-
-
-
+endmodule
