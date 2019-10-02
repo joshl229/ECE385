@@ -4,8 +4,8 @@ module register16 (input logic Clk, Reset, Load,
 
 	always_ff @ (posedge Clk)
 	begin
-		if (~Reset)
-			DataOut <= 16'h0;
+		if (Reset)
+			DataOut <= 16'h0000;
 
 		else if (Load)
 			DataOut <= DataIn;
@@ -27,33 +27,33 @@ logic [7:0][15:0] regout;
 			begin
 				if (Load)
 					case(DRIN)
-						3'b000: regout[0] = DataIn;
-						3'b001: regout[1] = DataIn;
-						3'b010: regout[2] = DataIn;
+						3'b000: regout[0] <= DataIn;
+						3'b001: regout[1] <= DataIn;
+						3'b010: regout[2] <= DataIn;
 
-						3'b011: regout[3] = DataIn;
-						3'b100: regout[4] = DataIn;
+						3'b011: regout[3] <= DataIn;
+						3'b100: regout[4] <= DataIn;
 
-						3'b101: regout[5] = DataIn;
-						3'b110: regout[6] = DataIn;
+						3'b101: regout[5] <= DataIn;
+						3'b110: regout[6] <= DataIn;
 
-						3'b111: regout[7] = DataIn;
+						3'b111: regout[7] <= DataIn;
 						default;
 					endcase
 				else if (Reset)
 					begin
-						regout[0] = 16'h0;
+						regout[0] <= 16'h0;
 
-						regout[1] = 16'h0;
+						regout[1] <= 16'h0;
 
-						regout[2] = 16'h0;
+						regout[2] <= 16'h0;
 
-						regout[3] = 16'h0;
-						regout[4] = 16'h0;
-						regout[5] = 16'h0;
+						regout[3] <= 16'h0;
+						regout[4] <= 16'h0;
+						regout[5] <= 16'h0;
 
-						regout[6] = 16'h0;
-						regout[7] = 16'h0;
+						regout[6] <= 16'h0;
+						regout[7] <= 16'h0;
 					end
 
 			end
@@ -104,9 +104,9 @@ module flipflop (input logic Clk, Reset, Load, DataIn,
     always_ff @ (posedge Clk)
     begin
 	 	 if (Reset)
-			  DataOut = 1'h0;
+			  DataOut <= 1'h0;
 		 else if (Load)
-			  DataOut = DataIn;
+			  DataOut <= DataIn;
 
     end
 

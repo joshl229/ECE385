@@ -162,8 +162,9 @@ module m_GATES (
 						input logic GateMARMUX,
 						input logic GateMDR,
 						input logic GatePC,
+						input logic [15:0] aluoutput,marmuxoutput, mdroutput, pcoutput,
 						input logic [3:0] Select,
-						output logic Output
+						output logic [15:0] Output
 					);
 					
 always_comb
@@ -171,13 +172,13 @@ always_comb
 		case(Select)
 		
 		4'b1000:
-			Output = GateALU;
+			Output = aluoutput;
 		4'b0100:
-			Output = GateMARMUX;
+			Output = marmuxoutput;
 		4'b0010:
-			Output = GateMDR;
+			Output = mdroutput;
 		4'b0001:
-			Output = GatePC;
+			Output = pcoutput;
 		default:
 			Output = 16'b000000000000;
 			

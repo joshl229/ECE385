@@ -15,7 +15,7 @@ module datapath(
 						input logic LD_REG,
 						input logic GateALU, 
 						input logic [1:0] ALUK,
-						input logic LD_LED,
+						input logic LD_LED, 
 						output logic BEN,
 						output logic [15:0] IR, MDR, MAR, PC,
 						output logic [11:0] LED
@@ -43,8 +43,8 @@ m_ADDR2MUX ADDR2_MUX(.IRoffset6(SEXT6), .IRoffset9(SEXT9), .IRoffset11(SEXT11), 
 m_DRMUX DR_MUX(.IR(IR[11:9]), .Select(DRMUX), .Output(DRMUXOUT));
 m_SR1MUX SR1_MUX(.IR11(IR[11:9]), .IR8(IR[8:6]), .Select(SR1MUX), .Output(SR1MUXOUT));
 m_SR2MUX SR2_MUX(.SR2(SR2OUT), .SEXT(SEXT5), .Select(SR2MUX), .Output(SR2MUXOUT));
-m_MDRMUX MDR_M(.BUS(BUS), .MEM2IO(MDR_IN), .Output(MDRMUXOUT), .Select());
-m_GATES Gates(.GateALU(GateALU), .GateMARMUX(GateMARMUX), .GateMDR(GateMDR), .GatePC(GatePC), .Select({GateALU, GateMARMUX, GateMDR, GatePC}), .Output(BUS));
+m_MDRMUX MDR_M(.BUS(BUS), .MEM2IO(MDR_In), .Output(MDRMUXOUT), .Select(MIO_EN));
+m_GATES Gates(.GateALU(GateALU), .GateMARMUX(GateMARMUX), .GateMDR(GateMDR), .GatePC(GatePC), .Select({GateALU, GateMARMUX, GateMDR, GatePC}), .aluoutput(ALUOUT), .marmuxoutput(ADDER_OUTPUT), .mdroutput(MDR), .pcoutput(PC), .Output(BUS));
 
 
 // Connecting Registers 

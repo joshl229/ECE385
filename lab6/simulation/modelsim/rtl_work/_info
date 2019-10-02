@@ -10,7 +10,7 @@ cModel Technology
 Z0 dC:/Users/joey3/Desktop/ECE385/lab6/simulation/modelsim
 vALU
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1569954890
+Z2 !s110 1569995751
 !i10b 1
 !s100 YZ`EYm^b0Wl9XiOahSUNC0
 INVDSB6iFmn_KUU0bViK9i2
@@ -18,100 +18,100 @@ Z3 VDg1SIo80bB@j0V0VzS_@n1
 !s105 ALU_sv_unit
 S1
 R0
-w1569801260
+Z4 w1569956722
 8C:/Users/joey3/Desktop/ECE385/lab6/ALU.sv
 FC:/Users/joey3/Desktop/ECE385/lab6/ALU.sv
 L0 1
-Z4 OV;L;10.5b;63
+Z5 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z5 !s108 1569954889.000000
+Z6 !s108 1569995751.000000
 !s107 C:/Users/joey3/Desktop/ECE385/lab6/ALU.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/joey3/Desktop/ECE385/lab6|C:/Users/joey3/Desktop/ECE385/lab6/ALU.sv|
 !i113 1
-Z6 o-sv -work work
-Z7 !s92 -sv -work work +incdir+C:/Users/joey3/Desktop/ECE385/lab6
-Z8 tCvgOpt 0
+Z7 o-sv -work work
+Z8 !s92 -sv -work work +incdir+C:/Users/joey3/Desktop/ECE385/lab6
+Z9 tCvgOpt 0
 n@a@l@u
 vdatapath
 R1
-R2
+Z10 !s110 1569995752
 !i10b 1
-!s100 <^=e0U>MOZhX7X?MmcdB:0
-I66FRU2NiWKR9SXlfd4L::2
+!s100 O@_MN7aYNT5[Dc<naIVZk2
+I8h?P;4HlYW;jV6J9[Md102
 R3
 !s105 datapath_sv_unit
 S1
 R0
-w1569898118
+w1569964864
 8C:/Users/joey3/Desktop/ECE385/lab6/datapath.sv
 FC:/Users/joey3/Desktop/ECE385/lab6/datapath.sv
 L0 1
-R4
+R5
 r1
 !s85 0
 31
-Z9 !s108 1569954890.000000
+R6
 !s107 C:/Users/joey3/Desktop/ECE385/lab6/datapath.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/joey3/Desktop/ECE385/lab6|C:/Users/joey3/Desktop/ECE385/lab6/datapath.sv|
 !i113 1
-R6
 R7
 R8
+R9
 veightreg16
 R1
-Z10 !s110 1569954888
+Z11 !s110 1569995750
 !i10b 1
-!s100 MBdKohPi0jSS2O;?P0>OL2
-I_f:OWcd<1nJO85;f1B5hl0
+!s100 TKNW8MQVN_PC[M9;K1_]>1
+IUTW8b]7=@MSazi]ADIXCQ3
 R3
-Z11 !s105 register_sv_unit
+Z12 !s105 register_sv_unit
 S1
 R0
-Z12 w1569950696
-Z13 8C:/Users/joey3/Desktop/ECE385/lab6/register.sv
-Z14 FC:/Users/joey3/Desktop/ECE385/lab6/register.sv
-Z15 L0 19
-R4
+Z13 w1569961770
+Z14 8C:/Users/joey3/Desktop/ECE385/lab6/register.sv
+Z15 FC:/Users/joey3/Desktop/ECE385/lab6/register.sv
+Z16 L0 19
+R5
 r1
 !s85 0
 31
-Z16 !s108 1569954888.000000
-Z17 !s107 C:/Users/joey3/Desktop/ECE385/lab6/register.sv|
-Z18 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/joey3/Desktop/ECE385/lab6|C:/Users/joey3/Desktop/ECE385/lab6/register.sv|
+Z17 !s108 1569995750.000000
+Z18 !s107 C:/Users/joey3/Desktop/ECE385/lab6/register.sv|
+Z19 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/joey3/Desktop/ECE385/lab6|C:/Users/joey3/Desktop/ECE385/lab6/register.sv|
 !i113 1
-R6
 R7
 R8
+R9
 vflipflop
 R1
-R10
-!i10b 1
-!s100 cO_Y:7C>1DcXY[kK>PPnY2
-ITg[bKoO8`>k9UVU`lHmDA2
-R3
 R11
+!i10b 1
+!s100 jRAk;I6XKBg?X<Ea9X3A33
+Ijb]<U@MM^]bLLPn25k]e82
+R3
+R12
 S1
 R0
-R12
 R13
 R14
+R15
 L0 101
-R4
+R5
 r1
 !s85 0
 31
-R16
 R17
 R18
+R19
 !i113 1
-R6
 R7
 R8
+R9
 vHexDriver
 R1
-R10
+R11
 !i10b 1
 !s100 =R2i165HPJgkY;aA[TRmG3
 IizdDFj54TWE^Wcf<[fCj40
@@ -119,51 +119,51 @@ R3
 !s105 HexDriver_sv_unit
 S1
 R0
-w1453932322
+R4
 8C:/Users/joey3/Desktop/ECE385/lab6/HexDriver.sv
 FC:/Users/joey3/Desktop/ECE385/lab6/HexDriver.sv
 L0 1
-R4
+R5
 r1
 !s85 0
 31
-R16
+R17
 !s107 C:/Users/joey3/Desktop/ECE385/lab6/HexDriver.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/joey3/Desktop/ECE385/lab6|C:/Users/joey3/Desktop/ECE385/lab6/HexDriver.sv|
 !i113 1
-R6
 R7
 R8
+R9
 n@hex@driver
 vISDU
 R1
-Z19 !s110 1569954889
+R2
 !i10b 1
-!s100 2Q8H5SdNF=Oc[=WTzASB@3
-I5;hW56;JZEneGN6`Ehd@U3
+!s100 S6BIONZc=PM]zS?o]C=2b2
+I3KK@fMmjg0EzKc5okYGS:0
 R3
 !s105 ISDU_sv_unit
 S1
 R0
-w1569953428
+w1569995658
 8C:/Users/joey3/Desktop/ECE385/lab6/ISDU.sv
 FC:/Users/joey3/Desktop/ECE385/lab6/ISDU.sv
-L0 1
-R4
+R16
+R5
 r1
 !s85 0
 31
-R5
+R6
 !s107 C:/Users/joey3/Desktop/ECE385/lab6/ISDU.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/joey3/Desktop/ECE385/lab6|C:/Users/joey3/Desktop/ECE385/lab6/ISDU.sv|
 !i113 1
-R6
 R7
 R8
+R9
 n@i@s@d@u
 vlab6_toplevel
 R1
-Z20 !s110 1569954891
+R10
 !i10b 1
 !s100 k;XFYEj__@<f`n61h0?<B3
 IVe^[N76X1MfR^=PLg__8V1
@@ -171,21 +171,21 @@ R3
 !s105 lab6_toplevel_sv_unit
 S1
 R0
-w1508809841
+R4
 8C:/Users/joey3/Desktop/ECE385/lab6/lab6_toplevel.sv
 FC:/Users/joey3/Desktop/ECE385/lab6/lab6_toplevel.sv
 L0 10
-R4
+R5
 r1
 !s85 0
 31
-Z21 !s108 1569954891.000000
+Z20 !s108 1569995752.000000
 !s107 C:/Users/joey3/Desktop/ECE385/lab6/lab6_toplevel.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/joey3/Desktop/ECE385/lab6|C:/Users/joey3/Desktop/ECE385/lab6/lab6_toplevel.sv|
 !i113 1
-R6
 R7
 R8
+R9
 vm_ADDR1MUX
 R1
 R2
@@ -193,24 +193,24 @@ R2
 !s100 cBoV4V9TLD1kiDEdDP:z01
 I^<g=0bZDT>5fDHYR6Fkj=3
 R3
-Z22 !s105 mux_sv_unit
+Z21 !s105 mux_sv_unit
 S1
 R0
-Z23 w1569897692
-Z24 8C:/Users/joey3/Desktop/ECE385/lab6/mux.sv
-Z25 FC:/Users/joey3/Desktop/ECE385/lab6/mux.sv
+Z22 w1569962996
+Z23 8C:/Users/joey3/Desktop/ECE385/lab6/mux.sv
+Z24 FC:/Users/joey3/Desktop/ECE385/lab6/mux.sv
 L0 93
-R4
+R5
 r1
 !s85 0
 31
-R9
-Z26 !s107 C:/Users/joey3/Desktop/ECE385/lab6/mux.sv|
-Z27 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/joey3/Desktop/ECE385/lab6|C:/Users/joey3/Desktop/ECE385/lab6/mux.sv|
-!i113 1
 R6
+Z25 !s107 C:/Users/joey3/Desktop/ECE385/lab6/mux.sv|
+Z26 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/joey3/Desktop/ECE385/lab6|C:/Users/joey3/Desktop/ECE385/lab6/mux.sv|
+!i113 1
 R7
 R8
+R9
 nm_@a@d@d@r1@m@u@x
 vm_ADDR2MUX
 R1
@@ -219,24 +219,24 @@ R2
 !s100 QiOTT8hd53K5g?;of^B[52
 ILbaY7cU`C20Y5c_Nn]6C[3
 R3
-R22
+R21
 S1
 R0
+R22
 R23
 R24
-R25
 L0 114
-R4
+R5
 r1
 !s85 0
 31
-R9
-R26
-R27
-!i113 1
 R6
+R25
+R26
+!i113 1
 R7
 R8
+R9
 nm_@a@d@d@r2@m@u@x
 vm_DRMUX
 R1
@@ -245,50 +245,50 @@ R2
 !s100 z`fHTS<^]bTE5JJ5G`jCS0
 I4K9G61Y:05lV5OVhD2zgF1
 R3
-R22
+R21
 S1
 R0
+R22
 R23
 R24
-R25
 L0 29
-R4
+R5
 r1
 !s85 0
 31
-R9
-R26
-R27
-!i113 1
 R6
+R25
+R26
+!i113 1
 R7
 R8
+R9
 nm_@d@r@m@u@x
 vm_GATES
 R1
 R2
 !i10b 1
-!s100 0TP>8_Y4SjbJMa=0PK_D?2
-IzQzAc>CQPdji>aCi]UfdR0
+!s100 KYf4G3G5:eZ5CUc?kALmO0
+IXDTATHO4ck?HWBF`1YkYG2
 R3
-R22
+R21
 S1
 R0
+R22
 R23
 R24
-R25
 L0 160
-R4
+R5
 r1
 !s85 0
 31
-R9
-R26
-R27
-!i113 1
 R6
+R25
+R26
+!i113 1
 R7
 R8
+R9
 nm_@g@a@t@e@s
 vm_MDRMUX
 R1
@@ -297,24 +297,24 @@ R2
 !s100 zB4ICW:iR4LUNZlYgP`BD0
 I]H38i@]oB_WNihdK^ckio3
 R3
-R22
+R21
 S1
 R0
+R22
 R23
 R24
-R25
 L0 140
-R4
+R5
 r1
 !s85 0
 31
-R9
-R26
-R27
-!i113 1
 R6
+R25
+R26
+!i113 1
 R7
 R8
+R9
 nm_@m@d@r@m@u@x
 vm_PCMUX
 R1
@@ -323,24 +323,24 @@ R2
 !s100 DSRP81B:9Je23V[o;`D@o0
 I_;8Rh<lTOE_k1bNW7gBB]0
 R3
-R22
+R21
 S1
 R0
+R22
 R23
 R24
-R25
 L0 1
-R4
+R5
 r1
 !s85 0
 31
-R9
-R26
-R27
-!i113 1
 R6
+R25
+R26
+!i113 1
 R7
 R8
+R9
 nm_@p@c@m@u@x
 vm_SR1MUX
 R1
@@ -349,24 +349,24 @@ R2
 !s100 E]M0B]U^U?nh5l29Z]GGi1
 ImYlgHnOjYlk_CW`@DgL=U1
 R3
-R22
+R21
 S1
 R0
+R22
 R23
 R24
-R25
 L0 51
-R4
+R5
 r1
 !s85 0
 31
-R9
-R26
-R27
-!i113 1
 R6
+R25
+R26
+!i113 1
 R7
 R8
+R9
 nm_@s@r1@m@u@x
 vm_SR2MUX
 R1
@@ -375,28 +375,28 @@ R2
 !s100 o2@;B_3ON0OH3Z_Y[oVHe2
 Im?V43`j1m=z;K6M87GD6;0
 R3
-R22
+R21
 S1
 R0
+R22
 R23
 R24
-R25
 L0 72
-R4
+R5
 r1
 !s85 0
 31
-R9
-R26
-R27
-!i113 1
 R6
+R25
+R26
+!i113 1
 R7
 R8
+R9
 nm_@s@r2@m@u@x
 vMem2IO
 R1
-R19
+R2
 !i10b 1
 !s100 d<=A`]_5?F8Tz<i9:]04<3
 I=oi:;ZUc134Nb06R2Jc8g0
@@ -404,25 +404,25 @@ R3
 !s105 Mem2IO_sv_unit
 S1
 R0
-Z28 w1506381592
+R4
 8C:/Users/joey3/Desktop/ECE385/lab6/Mem2IO.sv
 FC:/Users/joey3/Desktop/ECE385/lab6/Mem2IO.sv
-Z29 L0 16
-R4
+Z27 L0 16
+R5
 r1
 !s85 0
 31
-R5
+R6
 !s107 C:/Users/joey3/Desktop/ECE385/lab6/Mem2IO.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/joey3/Desktop/ECE385/lab6|C:/Users/joey3/Desktop/ECE385/lab6/Mem2IO.sv|
 !i113 1
-R6
 R7
 R8
+R9
 n@mem2@i@o
 Xmemory_contents_sv_unit
 R1
-Z30 DXx4 work 6 SLC3_2 0 22 gXncn6IG1oRQZ4delmEb[1
+Z28 DXx4 work 6 SLC3_2 0 22 gXncn6IG1oRQZ4delmEb[1
 VFD0caDU5[S]PCI?lG7i__1
 r1
 !s85 0
@@ -433,21 +433,21 @@ IFD0caDU5[S]PCI?lG7i__1
 !i103 1
 S1
 R0
-Z31 w1518295033
-Z32 8C:/Users/joey3/Desktop/ECE385/lab6/memory_contents.sv
-Z33 FC:/Users/joey3/Desktop/ECE385/lab6/memory_contents.sv
-L0 14
 R4
-R21
-Z34 !s107 C:/Users/joey3/Desktop/ECE385/lab6/memory_contents.sv|
-Z35 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/joey3/Desktop/ECE385/lab6|C:/Users/joey3/Desktop/ECE385/lab6/memory_contents.sv|
+Z29 8C:/Users/joey3/Desktop/ECE385/lab6/memory_contents.sv
+Z30 FC:/Users/joey3/Desktop/ECE385/lab6/memory_contents.sv
+L0 14
+R5
+R20
+Z31 !s107 C:/Users/joey3/Desktop/ECE385/lab6/memory_contents.sv|
+Z32 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/joey3/Desktop/ECE385/lab6|C:/Users/joey3/Desktop/ECE385/lab6/memory_contents.sv|
 !i113 1
-R6
 R7
 R8
+R9
 vmemory_parser
 R1
-R30
+R28
 DXx4 work 23 memory_contents_sv_unit 0 22 FD0caDU5[S]PCI?lG7i__1
 R3
 r1
@@ -459,72 +459,72 @@ Ih:L2kFaQF3RV0BejOJFV>0
 !s105 memory_contents_sv_unit
 S1
 R0
+R4
+R29
+R30
+R27
+R5
+R20
 R31
 R32
-R33
-R29
-R4
-R21
-R34
-R35
 !i113 1
-R6
 R7
 R8
+R9
 vNZP
 R1
-R10
+R11
 !i10b 1
 !s100 Zng=ml5dl5zY5JYa1MbY41
 I:W`P3UJ5@Y168jRd=Ak:W3
 R3
-R11
+R12
 S1
 R0
-R12
 R13
 R14
+R15
 L0 116
-R4
+R5
 r1
 !s85 0
 31
-R16
 R17
 R18
+R19
 !i113 1
-R6
 R7
 R8
+R9
 n@n@z@p
 vregister16
 R1
-R10
-!i10b 1
-!s100 ILoi39d89VBFf1MbJiOmG2
-IoV=F@RPniICJaC6QbYJjV2
-R3
 R11
+!i10b 1
+!s100 <g^A;YK8Q02P[4@B97ZR12
+I8B[iWU:FT1gm1WH2zd1W83
+R3
+R12
 S1
 R0
-R12
 R13
 R14
+R15
 L0 1
-R4
+R5
 r1
 !s85 0
 31
-R16
 R17
 R18
+R19
 !i113 1
-R6
 R7
 R8
+R9
 vslc3
 R1
-R20
+R10
 !i10b 1
 !s100 6P61o7QZb=1a]Q9F82G@N2
 Ij02JH`Y81KzZ@:;a0g9jO2
@@ -532,49 +532,49 @@ R3
 !s105 slc3_sv_unit
 S1
 R0
-w1569897443
+R4
 8C:/Users/joey3/Desktop/ECE385/lab6/slc3.sv
 FC:/Users/joey3/Desktop/ECE385/lab6/slc3.sv
-R15
-R4
+R16
+R5
 r1
 !s85 0
 31
-R9
+R20
 !s107 C:/Users/joey3/Desktop/ECE385/lab6/slc3.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/joey3/Desktop/ECE385/lab6|C:/Users/joey3/Desktop/ECE385/lab6/slc3.sv|
 !i113 1
-R6
 R7
 R8
+R9
 XSLC3_2
 R1
-R19
+R2
 !i10b 1
 !s100 Cz8_^@QRefP31?j=Zf>lj0
 IgXncn6IG1oRQZ4delmEb[1
 VgXncn6IG1oRQZ4delmEb[1
 S1
 R0
-R28
+R4
 8C:/Users/joey3/Desktop/ECE385/lab6/SLC3_2.sv
 FC:/Users/joey3/Desktop/ECE385/lab6/SLC3_2.sv
 L0 24
-R4
+R5
 r1
 !s85 0
 31
-R5
+R6
 !s107 C:/Users/joey3/Desktop/ECE385/lab6/SLC3_2.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/joey3/Desktop/ECE385/lab6|C:/Users/joey3/Desktop/ECE385/lab6/SLC3_2.sv|
 !i113 1
-R6
 R7
 R8
+R9
 n@s@l@c3_2
 vtest_memory
 R1
-R19
+R2
 !i10b 1
 !s100 AZAU7PQT4]][EEHo>57W43
 I4CDQ<ZXQBL;P;Ki@1S:k53
@@ -582,49 +582,49 @@ R3
 !s105 test_memory_sv_unit
 S1
 R0
-w1508442516
+R4
 8C:/Users/joey3/Desktop/ECE385/lab6/test_memory.sv
 FC:/Users/joey3/Desktop/ECE385/lab6/test_memory.sv
 L0 22
-R4
+R5
 r1
 !s85 0
 31
-R5
+R6
 !s107 C:/Users/joey3/Desktop/ECE385/lab6/test_memory.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/joey3/Desktop/ECE385/lab6|C:/Users/joey3/Desktop/ECE385/lab6/test_memory.sv|
 !i113 1
-R6
 R7
 R8
+R9
 vtestbench
 R1
-!s110 1569954892
+R10
 !i10b 1
-!s100 TJ8WRbR3Ldh;@U1T0^N@W1
-I]WeK@bWDhPU4OzhM9mPdJ2
+!s100 McWkWB@3Si1SScgO_WEd_0
+IfAlGl8RiHzckS_V1dkFT=2
 R3
 !s105 testbench_sv_unit
 S1
 R0
-w1569954745
+w1569960620
 8C:/Users/joey3/Desktop/ECE385/lab6/testbench.sv
 FC:/Users/joey3/Desktop/ECE385/lab6/testbench.sv
 L0 3
-R4
+R5
 r1
 !s85 0
 31
-R21
+R20
 !s107 C:/Users/joey3/Desktop/ECE385/lab6/testbench.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/joey3/Desktop/ECE385/lab6|C:/Users/joey3/Desktop/ECE385/lab6/testbench.sv|
 !i113 1
-R6
 R7
 R8
+R9
 vtristate
 R1
-R19
+R11
 !i10b 1
 !s100 Akazoo=71mOgoH<gVR_UC0
 IP6^LYO7G4Z8iLXa^logGj3
@@ -632,18 +632,18 @@ R3
 !s105 tristate_sv_unit
 S1
 R0
-R28
+R4
 8C:/Users/joey3/Desktop/ECE385/lab6/tristate.sv
 FC:/Users/joey3/Desktop/ECE385/lab6/tristate.sv
-R29
-R4
+R27
+R5
 r1
 !s85 0
 31
-R16
+R17
 !s107 C:/Users/joey3/Desktop/ECE385/lab6/tristate.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/joey3/Desktop/ECE385/lab6|C:/Users/joey3/Desktop/ECE385/lab6/tristate.sv|
 !i113 1
-R6
 R7
 R8
+R9

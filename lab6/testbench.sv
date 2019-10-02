@@ -34,13 +34,15 @@ module testbench();
 		 #2 Reset = 1; // Toggle Rest
 		   Run = 0;
 			#2 Run = 1; 
-		#2 Continue = 0;
-		 #2 Continue = 1; 
-		// #5 Continue = 0;
-		// #2 Continue = 1;
-		// #5 Continue = 0;
-		// #2 Continue = 1;
+		#6 Continue = 0;
+		 #6 Continue = 1; 
+		 #6 Continue = 0;
+		 #6 Continue = 1;
+		 #6 Continue = 0;
+		 #6 Continue = 1;
 
+		 
+		 
     end
 
 endmodule
