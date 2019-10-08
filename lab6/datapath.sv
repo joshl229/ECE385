@@ -36,6 +36,24 @@ assign SEXT9 = {{7{IR[8]}}, IR[8:0]};
 assign SEXT11 = {{5{IR[10]}}, IR[10:0]};
 assign SEXT5 = {{11{IR[4]}}, IR[4:0]};
 
+// NZP
+always_comb 
+	begin
+		
+		NIN = BUS[15]; // Tells if negative or not
+		PIN = ~( BUS[15] | (BUS == 16'b000000000000) ); // Tells if positive or not
+		
+		if( BUS == 16'b000000000000 )
+			begin
+			ZIN = 1'b1;
+			end
+			
+		else
+			begin
+			ZIN = 1'b0;
+			end
+	end
+
 // Connecting the MUXes		
 m_PCMUX PC_MUX(.ADDER(ADDER_OUTPUT), .BUS(BUS), .PC1(PC + 16'b0000000000000001), .Select(PCMUX), .Output(PCMUXOUT));
 m_ADDR1MUX ADDR1_MUX(.PC(PC), .SR1(SR1OUT), .Select(ADDR1MUX), .Output(ADDR1MUXOUT));
@@ -58,7 +76,7 @@ register16 MDR_REG(.Clk(Clk), .Reset(Reset_ah), .Load(LD_MDR), .DataIn(MDRMUXOUT
 ALU new_ALU(.A(SR1OUT), .B(SR2MUXOUT), .ALUK(ALUK), .OUTPUT(ALUOUT));
 
 // Connecting Flip Flop
-NZP NZP(.Clk(Clk), .NIN(NIN), .ZIN(ZIN), .PIN(PIN), .LD_CC(LD_CC), .NOUT(NOUT), .ZOUT(ZOUT), .POUT(POUT));
+NZP NZP(.Clk(Clk), .NIn(NIN), .ZIn(ZIN), .PIn(PIN), .LD_CC(LD_CC), .NOut(NOUT), .ZOut(ZOUT), .POut(POUT));
 flipflop BENABLE(.Clk(Clk), .Reset(Reset_ah), .Load(LD_BEN), .DataIn(IR[11] & NOUT| IR[10] & ZOUT | IR[9] & POUT), .DataOut(BEN));	
 
 // Pause 

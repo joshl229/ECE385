@@ -55,7 +55,7 @@ module ISDU (   input logic         Clk,
 									Mem_WE
 				);
 
-	enum logic [3:0] {  Halted, 
+	enum logic [4:0] {  Halted, 
 						PauseIR1, 
 						PauseIR2, 
 						S_18, 
@@ -63,7 +63,11 @@ module ISDU (   input logic         Clk,
 						S_33_2, 
 						S_35, 
 						S_32, 
-						S_01}   State, Next_state;   // Internal state logic
+						S_01, 
+						S_05, S_09, S_06, 
+						S_25_1, S_25_2, S_27, 
+						S_07, S_23, S_16_1, S_16_2,
+						S_04, S_12, S_21, S_22, S_00 }   State, Next_state;   // Internal state logic
 		
 	always_ff @ (posedge Clk)
 	begin
@@ -119,7 +123,7 @@ module ISDU (   input logic         Clk,
 			S_33_2 : 
 				Next_state = S_35;
 			S_35 : 
-				Next_state = PauseIR1;
+				Next_state = S_32;
 			// PauseIR1 and PauseIR2 are only for Week 1 such that TAs can see 
 			// the values in IR.
 			PauseIR1 : 
@@ -134,17 +138,69 @@ module ISDU (   input logic         Clk,
 					Next_state = S_18;
 			S_32 : 
 				case (Opcode)
-					4'b0001 : 
+					4'b0001 : // add
 						Next_state = S_01;
 
 					// You need to finish the rest of opcodes.....
-
+					4'b0101 : // and
+						Next_state = S_05;
+					
+					4'b1001 : // not
+						Next_state = S_09;
+						
+					4'b0110 : // ldr
+						Next_state = S_06;
+						
+					4'b0111 : // str
+						Next_state = S_07;
+						
+					4'b0100 : // jsr
+						Next_state = S_04; 
+						
+					4'b1100 : // jmp
+						Next_state = S_12;
+					
+					4'b0000 : // br
+						Next_state = S_00;
+						
+					4'b1101 : // Pause
+						Next_state = PauseIR1;
+					
 					default : 
 						Next_state = S_18;
 				endcase
 			S_01 : 
 				Next_state = S_18;
+			S_05 : Next_state = S_18; // AND
+			S_09 : Next_state = S_18; // NOT
+			
+			// LDR
+			S_06 : Next_state = S_25_1; 
+			S_25_1 : Next_state = S_25_2;
+			S_25_2 : Next_state = S_27;
+			S_27 : Next_state = S_18; 
+			
+			// STR
+			S_07 : Next_state = S_23; 
+			S_23 : Next_state = S_16_1; 
+			S_16_1 : Next_state = S_16_2; 
+			S_16_2 : Next_state = S_18; 
+			
+			// JSR 
+			S_04 : Next_state = S_21;
+			S_21 : Next_state = S_18;
+			
+			S_12 : Next_state = S_18; // JMP
+			
+			// BR
+			S_00 : 
+				if(BEN==1'b1) 					
+					Next_state = S_22;
+				else
+					Next_state = S_18;
 
+			
+			
 			// You need to finish the rest of states.....
 
 			default : ;
@@ -162,7 +218,9 @@ module ISDU (   input logic         Clk,
 					LD_PC = 1'b1;
 				end
 			S_33_1 : 
+			begin
 				Mem_OE = 1'b0;
+			end
 			S_33_2 : 
 				begin 
 					Mem_OE = 1'b0;
@@ -173,20 +231,147 @@ module ISDU (   input logic         Clk,
 					GateMDR = 1'b1;
 					LD_IR = 1'b1;
 				end
-			PauseIR1: ;
+			PauseIR1: 
+				begin	
+					LD_LED = 1'b1;
+				end
+				
 			PauseIR2: ;
 			S_32 : 
+				begin
 				LD_BEN = 1'b1;
-			S_01 : 
+				end
+			S_01 : // add
 				begin 
 					SR2MUX = IR_5;
 					ALUK = 2'b00;
 					GateALU = 1'b1;
 					LD_REG = 1'b1;
 					// incomplete...
+					LD_CC = 1'b1;
+					SR1MUX = 1'b1;
 				end
+			
+			S_05 : // and
+            begin 
+					SR1MUX = 1'b1;
+					SR2MUX = IR_5; 
+					ALUK = 2'b01;
+					GateALU = 1'b1;
+					LD_REG = 1'b1;
+					LD_CC = 1'b1;
+            end
+			
+			S_09 : // not
+				begin
+					SR1MUX = 1'b1;
+					SR2MUX = 1'b0; 
+					ALUK = 2'b10;
+					GateALU = 1'b1;
+					LD_REG = 1'b1;
+					LD_CC = 1'b1;
+				end
+			
+			// ldr 
+			S_06 :
+				begin
+					SR1MUX = 1'b1;
+					GateMARMUX = 1'b1;
+					LD_MAR = 1'b1;
+					ADDR1MUX = 1'b1;
+					ADDR2MUX = 2'b01;
+				end	
+			S_25_1:
+				begin
+					Mem_WE = 1'b1;
+					Mem_OE = 1'b0;
+				end
+			S_25_2:
+				begin
+					Mem_WE = 1'b1;
+					Mem_OE = 1'b0;
+					LD_MDR = 1'b1;
+				end
+			S_27 :
+				begin
+					LD_REG = 1'b1;
+					LD_CC = 1'b1;
+					GateMDR = 1'b1;
+				end
+			
+			// str
+			S_07 : 
+				begin
+					ADDR1MUX = 1'b1; 
+					ADDR2MUX = 2'b01;
+					GateMARMUX = 1'b1;
+					LD_MAR = 1'b1; 
+					SR1MUX = 1'b1; 
+				end
+				
+			S_23 : 
+				begin
+					ALUK = 2'b11;
+					GateALU = 1'b1;
+					LD_MDR = 1'b1; 
+					SR1MUX = 1'b0;
+				end
+				
+			S_16_1 : 
+				begin
+					Mem_WE = 1'b0;
+					Mem_OE = 1'b1;
+				end
+				
+			S_16_2 : 
+				begin
+					Mem_WE = 1'b0;
+					Mem_OE = 1'b1; 
+				end
+				
+			// jsr 
+			S_04 : 
+				begin
+					GatePC = 1'b1;
+					LD_REG = 1'b1;
+					DRMUX = IR_11;
+				end
+			
+			S_21 : 	
+				begin 
+					ADDR1MUX = 1'b0;
+					ADDR2MUX = 2'b11;
+					PCMUX = 2'b10;
+					LD_PC = 1'b1;
+				end
+				
+			S_12 : // jmp
+				begin
+					SR1MUX = 1'b1;
+					PCMUX = 2'b10;
+					LD_PC = 1'b1;
+					ADDR1MUX = 1'b1;
+					ADDR2MUX = 2'b00;
+				end
+			
+			// br 
+			S_00 : 
+				begin
+					Mem_OE = 1'b1; 
+					Mem_WE = 1'b1; 
+				end
+				
+			S_22 : 
+				begin 
+					ADDR1MUX = 1'b0;
+					ADDR2MUX = 2'b10;
+					PCMUX = 2'b10;
+					LD_PC = 1'b1; 
+				end
+				
 
 			// You need to finish the rest of states.....
+			
 
 			default : ;
 		endcase

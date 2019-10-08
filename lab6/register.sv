@@ -113,16 +113,3 @@ module flipflop (input logic Clk, Reset, Load, DataIn,
 endmodule
 
 
-module NZP(input logic Clk, NIN, ZIN, PIN, LD_CC,
-			  output logic NOUT, ZOUT, POUT);
-
-always_ff @ (posedge Clk)
-				begin
-					if(LD_CC)
-						begin
-							NOUT <= NIN;
-							ZOUT <= ZIN;
-							POUT <= PIN;
-						end
-				end
-endmodule

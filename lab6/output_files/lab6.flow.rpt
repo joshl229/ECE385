@@ -1,5 +1,5 @@
 Flow report for lab6
-Wed Oct 02 00:55:27 2019
+Tue Oct 08 00:00:07 2019
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Wed Oct 02 00:55:27 2019       ;
+; Flow Status                        ; Successful - Tue Oct 08 00:00:07 2019       ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; lab6                                        ;
 ; Top-level Entity Name              ; lab6_toplevel                               ;
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/02/2019 00:54:30 ;
+; Start date & time ; 10/07/2019 23:59:46 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; lab6                ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------+----------------------------------------+---------------+---------------+----------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name   ; Section Id     ;
 +--------------------------------------+----------------------------------------+---------------+---------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 209472095467987.156999567005572        ; --            ; --            ; --             ;
+; COMPILER_SIGNATURE_ID                ; 209472095467987.157051078605888        ; --            ; --            ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --            ; testbench      ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; testbench                              ; --            ; --            ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Systemverilog Hdl                      ; --            ; --            ; eda_simulation ;
@@ -104,8 +104,8 @@ refer to the applicable agreement for further details.
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Elaboration ; 00:00:59     ; 1.0                     ; 4740 MB             ; 00:00:36                           ;
-; Total                  ; 00:00:59     ; --                      ; --                  ; 00:00:36                           ;
+; Analysis & Elaboration ; 00:00:22     ; 1.0                     ; 4735 MB             ; 00:00:41                           ;
+; Total                  ; 00:00:22     ; --                      ; --                  ; 00:00:41                           ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
