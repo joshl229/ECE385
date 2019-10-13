@@ -1,5 +1,5 @@
 EDA Netlist Writer report for lab6
-Tue Oct 01 16:34:53 2019
+Fri Oct 11 21:46:09 2019
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -36,7 +36,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Tue Oct 01 16:34:53 2019 ;
+; EDA Netlist Writer Status ; Successful - Fri Oct 11 21:46:09 2019 ;
 ; Revision Name             ; lab6                                  ;
 ; Top-level Entity Name     ; lab6_toplevel                         ;
 ; Family                    ; Cyclone IV E                          ;
@@ -66,20 +66,20 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------+---------------------------------+
 
 
-+-------------------------------------------------------------------+
-; Simulation Generated Files                                        ;
-+-------------------------------------------------------------------+
-; Generated Files                                                   ;
-+-------------------------------------------------------------------+
-; C:/385test/lab6/simulation/modelsim/lab6_7_1200mv_85c_slow.svo    ;
-; C:/385test/lab6/simulation/modelsim/lab6_7_1200mv_0c_slow.svo     ;
-; C:/385test/lab6/simulation/modelsim/lab6_min_1200mv_0c_fast.svo   ;
-; C:/385test/lab6/simulation/modelsim/lab6.svo                      ;
-; C:/385test/lab6/simulation/modelsim/lab6_7_1200mv_85c_v_slow.sdo  ;
-; C:/385test/lab6/simulation/modelsim/lab6_7_1200mv_0c_v_slow.sdo   ;
-; C:/385test/lab6/simulation/modelsim/lab6_min_1200mv_0c_v_fast.sdo ;
-; C:/385test/lab6/simulation/modelsim/lab6_v.sdo                    ;
-+-------------------------------------------------------------------+
++--------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                           ;
++--------------------------------------------------------------------------------------+
+; Generated Files                                                                      ;
++--------------------------------------------------------------------------------------+
+; C:/Users/joey3/Desktop/ECE385/lab6/simulation/modelsim/lab6_7_1200mv_85c_slow.svo    ;
+; C:/Users/joey3/Desktop/ECE385/lab6/simulation/modelsim/lab6_7_1200mv_0c_slow.svo     ;
+; C:/Users/joey3/Desktop/ECE385/lab6/simulation/modelsim/lab6_min_1200mv_0c_fast.svo   ;
+; C:/Users/joey3/Desktop/ECE385/lab6/simulation/modelsim/lab6.svo                      ;
+; C:/Users/joey3/Desktop/ECE385/lab6/simulation/modelsim/lab6_7_1200mv_85c_v_slow.sdo  ;
+; C:/Users/joey3/Desktop/ECE385/lab6/simulation/modelsim/lab6_7_1200mv_0c_v_slow.sdo   ;
+; C:/Users/joey3/Desktop/ECE385/lab6/simulation/modelsim/lab6_min_1200mv_0c_v_fast.sdo ;
+; C:/Users/joey3/Desktop/ECE385/lab6/simulation/modelsim/lab6_v.sdo                    ;
++--------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -88,21 +88,21 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Tue Oct 01 16:34:52 2019
+    Info: Processing started: Fri Oct 11 21:46:06 2019
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off lab6 -c lab6
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file lab6_7_1200mv_85c_slow.svo in folder "C:/385test/lab6/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file lab6_7_1200mv_0c_slow.svo in folder "C:/385test/lab6/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file lab6_min_1200mv_0c_fast.svo in folder "C:/385test/lab6/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file lab6.svo in folder "C:/385test/lab6/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file lab6_7_1200mv_85c_v_slow.sdo in folder "C:/385test/lab6/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file lab6_7_1200mv_0c_v_slow.sdo in folder "C:/385test/lab6/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file lab6_min_1200mv_0c_v_fast.sdo in folder "C:/385test/lab6/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file lab6_v.sdo in folder "C:/385test/lab6/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file lab6_7_1200mv_85c_slow.svo in folder "C:/Users/joey3/Desktop/ECE385/lab6/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file lab6_7_1200mv_0c_slow.svo in folder "C:/Users/joey3/Desktop/ECE385/lab6/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file lab6_min_1200mv_0c_fast.svo in folder "C:/Users/joey3/Desktop/ECE385/lab6/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file lab6.svo in folder "C:/Users/joey3/Desktop/ECE385/lab6/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file lab6_7_1200mv_85c_v_slow.sdo in folder "C:/Users/joey3/Desktop/ECE385/lab6/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file lab6_7_1200mv_0c_v_slow.sdo in folder "C:/Users/joey3/Desktop/ECE385/lab6/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file lab6_min_1200mv_0c_v_fast.sdo in folder "C:/Users/joey3/Desktop/ECE385/lab6/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file lab6_v.sdo in folder "C:/Users/joey3/Desktop/ECE385/lab6/simulation/modelsim/" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4678 megabytes
-    Info: Processing ended: Tue Oct 01 16:34:53 2019
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Peak virtual memory: 4680 megabytes
+    Info: Processing ended: Fri Oct 11 21:46:09 2019
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:02
 
 

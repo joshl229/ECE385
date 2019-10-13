@@ -15,6 +15,7 @@ vlog -sv -work work +incdir+C:/Users/joey3/Desktop/ECE385/lab6 {C:/Users/joey3/D
 vlog -sv -work work +incdir+C:/Users/joey3/Desktop/ECE385/lab6 {C:/Users/joey3/Desktop/ECE385/lab6/ALU.sv}
 vlog -sv -work work +incdir+C:/Users/joey3/Desktop/ECE385/lab6 {C:/Users/joey3/Desktop/ECE385/lab6/mux.sv}
 vlog -sv -work work +incdir+C:/Users/joey3/Desktop/ECE385/lab6 {C:/Users/joey3/Desktop/ECE385/lab6/datapath.sv}
+vlog -sv -work work +incdir+C:/Users/joey3/Desktop/ECE385/lab6 {C:/Users/joey3/Desktop/ECE385/lab6/NZP.sv}
 vlog -sv -work work +incdir+C:/Users/joey3/Desktop/ECE385/lab6 {C:/Users/joey3/Desktop/ECE385/lab6/slc3.sv}
 vlog -sv -work work +incdir+C:/Users/joey3/Desktop/ECE385/lab6 {C:/Users/joey3/Desktop/ECE385/lab6/memory_contents.sv}
 vlog -sv -work work +incdir+C:/Users/joey3/Desktop/ECE385/lab6 {C:/Users/joey3/Desktop/ECE385/lab6/lab6_toplevel.sv}

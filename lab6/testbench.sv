@@ -17,7 +17,6 @@ module testbench();
 	 lab6_toplevel lc3(.*);
 
 
-
     // Toggle the clock
     // #1 means wait for a delay of 1 timeunit
     always begin : CLOCK_GENERATION
@@ -32,6 +31,8 @@ module testbench();
     initial begin: TEST_VECTORS
         Reset = 0;	
 		 #2 Reset = 1; // Toggle Rest
+		 
+		 S= 16'h0014;
 		   Run = 0;
 			#2 Run = 1; 
 		#6 Continue = 0;
@@ -41,7 +42,33 @@ module testbench();
 		 #6 Continue = 0;
 		 #6 Continue = 1;
 
+		 #6 Continue = 0;
+		 #6 Continue = 1; 
+		 #6 Continue = 0;
+		 #6 Continue = 1;
+		 #6 Continue = 0;
+		 #6 Continue = 1;
 		 
+		 #6 Continue = 0;
+		 #6 Continue = 1; 
+		 #6 Continue = 0;
+		 #6 Continue = 1;
+		 #6 Continue = 0;
+		 #6 Continue = 1;
+		 
+		 #6 Continue = 0;
+		 #6 Continue = 1; 
+		 #6 Continue = 0;
+		 #6 Continue = 1;
+		 #6 Continue = 0;
+		 #6 Continue = 1;
+		 
+		 #6 Continue = 0;
+		 #6 Continue = 1; 
+		 #6 Continue = 0;
+		 #6 Continue = 1;
+		 #6 Continue = 0;
+		 #6 Continue = 1;
 		 
     end
 

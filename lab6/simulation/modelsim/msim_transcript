@@ -13,93 +13,91 @@
 # 
 # vlog -sv -work work +incdir+C:/Users/joey3/Desktop/ECE385/lab6 {C:/Users/joey3/Desktop/ECE385/lab6/register.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:55:50 on Oct 02,2019
+# Start time: 21:54:23 on Oct 11,2019
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joey3/Desktop/ECE385/lab6" C:/Users/joey3/Desktop/ECE385/lab6/register.sv 
 # -- Compiling module register16
 # -- Compiling module eightreg16
 # -- Compiling module flipflop
-# -- Compiling module NZP
 # 
 # Top level modules:
 # 	register16
 # 	eightreg16
 # 	flipflop
-# 	NZP
-# End time: 00:55:50 on Oct 02,2019, Elapsed time: 0:00:00
+# End time: 21:54:24 on Oct 11,2019, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/joey3/Desktop/ECE385/lab6 {C:/Users/joey3/Desktop/ECE385/lab6/HexDriver.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:55:50 on Oct 02,2019
+# Start time: 21:54:24 on Oct 11,2019
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joey3/Desktop/ECE385/lab6" C:/Users/joey3/Desktop/ECE385/lab6/HexDriver.sv 
 # -- Compiling module HexDriver
 # 
 # Top level modules:
 # 	HexDriver
-# End time: 00:55:50 on Oct 02,2019, Elapsed time: 0:00:00
+# End time: 21:54:24 on Oct 11,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/joey3/Desktop/ECE385/lab6 {C:/Users/joey3/Desktop/ECE385/lab6/tristate.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:55:50 on Oct 02,2019
+# Start time: 21:54:24 on Oct 11,2019
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joey3/Desktop/ECE385/lab6" C:/Users/joey3/Desktop/ECE385/lab6/tristate.sv 
 # -- Compiling module tristate
 # 
 # Top level modules:
 # 	tristate
-# End time: 00:55:50 on Oct 02,2019, Elapsed time: 0:00:00
+# End time: 21:54:24 on Oct 11,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/joey3/Desktop/ECE385/lab6 {C:/Users/joey3/Desktop/ECE385/lab6/test_memory.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:55:51 on Oct 02,2019
+# Start time: 21:54:24 on Oct 11,2019
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joey3/Desktop/ECE385/lab6" C:/Users/joey3/Desktop/ECE385/lab6/test_memory.sv 
 # -- Compiling module test_memory
 # 
 # Top level modules:
 # 	test_memory
-# End time: 00:55:51 on Oct 02,2019, Elapsed time: 0:00:00
+# End time: 21:54:24 on Oct 11,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/joey3/Desktop/ECE385/lab6 {C:/Users/joey3/Desktop/ECE385/lab6/SLC3_2.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:55:51 on Oct 02,2019
+# Start time: 21:54:24 on Oct 11,2019
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joey3/Desktop/ECE385/lab6" C:/Users/joey3/Desktop/ECE385/lab6/SLC3_2.sv 
 # -- Compiling package SLC3_2
 # 
 # Top level modules:
 # 	--none--
-# End time: 00:55:51 on Oct 02,2019, Elapsed time: 0:00:00
+# End time: 21:54:24 on Oct 11,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/joey3/Desktop/ECE385/lab6 {C:/Users/joey3/Desktop/ECE385/lab6/Mem2IO.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:55:51 on Oct 02,2019
+# Start time: 21:54:24 on Oct 11,2019
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joey3/Desktop/ECE385/lab6" C:/Users/joey3/Desktop/ECE385/lab6/Mem2IO.sv 
 # -- Compiling module Mem2IO
 # 
 # Top level modules:
 # 	Mem2IO
-# End time: 00:55:51 on Oct 02,2019, Elapsed time: 0:00:00
+# End time: 21:54:24 on Oct 11,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/joey3/Desktop/ECE385/lab6 {C:/Users/joey3/Desktop/ECE385/lab6/ISDU.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:55:51 on Oct 02,2019
+# Start time: 21:54:24 on Oct 11,2019
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joey3/Desktop/ECE385/lab6" C:/Users/joey3/Desktop/ECE385/lab6/ISDU.sv 
 # -- Compiling module ISDU
 # 
 # Top level modules:
 # 	ISDU
-# End time: 00:55:51 on Oct 02,2019, Elapsed time: 0:00:00
+# End time: 21:54:24 on Oct 11,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/joey3/Desktop/ECE385/lab6 {C:/Users/joey3/Desktop/ECE385/lab6/ALU.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:55:51 on Oct 02,2019
+# Start time: 21:54:24 on Oct 11,2019
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joey3/Desktop/ECE385/lab6" C:/Users/joey3/Desktop/ECE385/lab6/ALU.sv 
 # -- Compiling module ALU
 # 
 # Top level modules:
 # 	ALU
-# End time: 00:55:51 on Oct 02,2019, Elapsed time: 0:00:00
+# End time: 21:54:24 on Oct 11,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/joey3/Desktop/ECE385/lab6 {C:/Users/joey3/Desktop/ECE385/lab6/mux.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:55:51 on Oct 02,2019
+# Start time: 21:54:24 on Oct 11,2019
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joey3/Desktop/ECE385/lab6" C:/Users/joey3/Desktop/ECE385/lab6/mux.sv 
 # -- Compiling module m_PCMUX
 # -- Compiling module m_DRMUX
@@ -119,31 +117,41 @@
 # 	m_ADDR2MUX
 # 	m_MDRMUX
 # 	m_GATES
-# End time: 00:55:51 on Oct 02,2019, Elapsed time: 0:00:00
+# End time: 21:54:25 on Oct 11,2019, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/joey3/Desktop/ECE385/lab6 {C:/Users/joey3/Desktop/ECE385/lab6/datapath.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:55:51 on Oct 02,2019
+# Start time: 21:54:25 on Oct 11,2019
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joey3/Desktop/ECE385/lab6" C:/Users/joey3/Desktop/ECE385/lab6/datapath.sv 
 # -- Compiling module datapath
 # 
 # Top level modules:
 # 	datapath
-# End time: 00:55:52 on Oct 02,2019, Elapsed time: 0:00:01
+# End time: 21:54:25 on Oct 11,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/joey3/Desktop/ECE385/lab6 {C:/Users/joey3/Desktop/ECE385/lab6/NZP.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:54:25 on Oct 11,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joey3/Desktop/ECE385/lab6" C:/Users/joey3/Desktop/ECE385/lab6/NZP.sv 
+# -- Compiling module NZP
+# 
+# Top level modules:
+# 	NZP
+# End time: 21:54:25 on Oct 11,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/joey3/Desktop/ECE385/lab6 {C:/Users/joey3/Desktop/ECE385/lab6/slc3.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:55:52 on Oct 02,2019
+# Start time: 21:54:25 on Oct 11,2019
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joey3/Desktop/ECE385/lab6" C:/Users/joey3/Desktop/ECE385/lab6/slc3.sv 
 # -- Compiling module slc3
 # 
 # Top level modules:
 # 	slc3
-# End time: 00:55:52 on Oct 02,2019, Elapsed time: 0:00:00
+# End time: 21:54:25 on Oct 11,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/joey3/Desktop/ECE385/lab6 {C:/Users/joey3/Desktop/ECE385/lab6/memory_contents.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:55:52 on Oct 02,2019
+# Start time: 21:54:25 on Oct 11,2019
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joey3/Desktop/ECE385/lab6" C:/Users/joey3/Desktop/ECE385/lab6/memory_contents.sv 
 # -- Compiling package memory_contents_sv_unit
 # -- Importing package SLC3_2
@@ -151,33 +159,33 @@
 # 
 # Top level modules:
 # 	memory_parser
-# End time: 00:55:52 on Oct 02,2019, Elapsed time: 0:00:00
+# End time: 21:54:25 on Oct 11,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/joey3/Desktop/ECE385/lab6 {C:/Users/joey3/Desktop/ECE385/lab6/lab6_toplevel.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:55:52 on Oct 02,2019
+# Start time: 21:54:25 on Oct 11,2019
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joey3/Desktop/ECE385/lab6" C:/Users/joey3/Desktop/ECE385/lab6/lab6_toplevel.sv 
 # -- Compiling module lab6_toplevel
 # 
 # Top level modules:
 # 	lab6_toplevel
-# End time: 00:55:52 on Oct 02,2019, Elapsed time: 0:00:00
+# End time: 21:54:25 on Oct 11,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -sv -work work +incdir+C:/Users/joey3/Desktop/ECE385/lab6 {C:/Users/joey3/Desktop/ECE385/lab6/testbench.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:55:52 on Oct 02,2019
+# Start time: 21:54:25 on Oct 11,2019
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joey3/Desktop/ECE385/lab6" C:/Users/joey3/Desktop/ECE385/lab6/testbench.sv 
 # -- Compiling module testbench
 # 
 # Top level modules:
 # 	testbench
-# End time: 00:55:52 on Oct 02,2019, Elapsed time: 0:00:00
+# End time: 21:54:25 on Oct 11,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  testbench
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" testbench 
-# Start time: 00:55:53 on Oct 02,2019
+# Start time: 21:54:26 on Oct 11,2019
 # Loading sv_std.std
 # Loading work.testbench
 # Loading work.lab6_toplevel
@@ -204,128 +212,283 @@
 # Loading work.SLC3_2
 # Loading work.memory_contents_sv_unit
 # Loading work.memory_parser
-# ** Warning: (vsim-3015) C:/Users/joey3/Desktop/ECE385/lab6/datapath.sv(45): [PCDPC] - Port size (16) does not match connection size (3) for port 'Output'. The port definition is at: C:/Users/joey3/Desktop/ECE385/lab6/mux.sv(76).
+# ** Warning: (vsim-3015) C:/Users/joey3/Desktop/ECE385/lab6/datapath.sv(63): [PCDPC] - Port size (16) does not match connection size (3) for port 'Output'. The port definition is at: C:/Users/joey3/Desktop/ECE385/lab6/mux.sv(76).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/lc3/my_slc/d0/SR2_MUX File: C:/Users/joey3/Desktop/ECE385/lab6/mux.sv
-# ** Warning: (vsim-3015) C:/Users/joey3/Desktop/ECE385/lab6/datapath.sv(58): [PCDPC] - Port size (16) does not match connection size (3) for port 'B'. The port definition is at: C:/Users/joey3/Desktop/ECE385/lab6/ALU.sv(1).
+# ** Warning: (vsim-3015) C:/Users/joey3/Desktop/ECE385/lab6/datapath.sv(76): [PCDPC] - Port size (16) does not match connection size (3) for port 'B'. The port definition is at: C:/Users/joey3/Desktop/ECE385/lab6/ALU.sv(1).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/lc3/my_slc/d0/new_ALU File: C:/Users/joey3/Desktop/ECE385/lab6/ALU.sv
-do C:/Users/joey3/Desktop/ECE385/lab6/simulation/modelsim/wave.do
-# onerror {resume}
-# quietly WaveActivateNextPane {} 0
-# add wave -noupdate /testbench/S
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: jalevy3  Hostname: ECEB-4072-10  ProcessID: 6684
-#           Attempting to use alternate WLF file "./wlfthncsvm".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlfthncsvm
-# add wave -noupdate /testbench/Clk
-# add wave -noupdate /testbench/Reset
-# add wave -noupdate /testbench/Run
-# add wave -noupdate /testbench/Continue
-# add wave -noupdate /testbench/LED
-# add wave -noupdate /testbench/HEX0
-# add wave -noupdate /testbench/HEX1
-# add wave -noupdate /testbench/HEX2
-# add wave -noupdate /testbench/HEX3
-# add wave -noupdate /testbench/HEX4
-# add wave -noupdate /testbench/HEX5
-# add wave -noupdate /testbench/HEX6
-# add wave -noupdate /testbench/HEX7
-# add wave -noupdate /testbench/CE
-# add wave -noupdate /testbench/UB
-# add wave -noupdate /testbench/LB
-# add wave -noupdate /testbench/OE
-# add wave -noupdate /testbench/WE
-# add wave -noupdate /testbench/ADDR
-# add wave -noupdate /testbench/Data
-# add wave -noupdate /testbench/R0
-# add wave -noupdate /testbench/R1
-# add wave -noupdate /testbench/R2
-# add wave -noupdate /testbench/R3
-# add wave -noupdate /testbench/R4
-# add wave -noupdate /testbench/R5
-# add wave -noupdate /testbench/R6
-# add wave -noupdate /testbench/R7
-# add wave -noupdate /testbench/S
-# add wave -noupdate /testbench/Clk
-# add wave -noupdate /testbench/Reset
-# add wave -noupdate /testbench/Run
-# add wave -noupdate /testbench/Continue
-# add wave -noupdate /testbench/LED
-# add wave -noupdate /testbench/HEX0
-# add wave -noupdate /testbench/HEX1
-# add wave -noupdate /testbench/HEX2
-# add wave -noupdate /testbench/HEX3
-# add wave -noupdate /testbench/HEX4
-# add wave -noupdate /testbench/HEX5
-# add wave -noupdate /testbench/HEX6
-# add wave -noupdate /testbench/HEX7
-# add wave -noupdate /testbench/CE
-# add wave -noupdate /testbench/UB
-# add wave -noupdate /testbench/LB
-# add wave -noupdate /testbench/OE
-# add wave -noupdate /testbench/WE
-# add wave -noupdate /testbench/ADDR
-# add wave -noupdate /testbench/Data
-# add wave -noupdate /testbench/R0
-# add wave -noupdate /testbench/R1
-# add wave -noupdate /testbench/R2
-# add wave -noupdate /testbench/R3
-# add wave -noupdate /testbench/R4
-# add wave -noupdate /testbench/R5
-# add wave -noupdate /testbench/R6
-# add wave -noupdate /testbench/R7
-# add wave -noupdate /testbench/lc3/my_slc/d0/PC_REG/DataOut
-# add wave -noupdate /testbench/lc3/my_slc/d0/MAR_REG/DataOut
-# add wave -noupdate /testbench/lc3/my_slc/d0/MDR_REG/DataOut
-# add wave -noupdate /testbench/lc3/my_slc/d0/PC_REG/Reset
-# add wave -noupdate /testbench/lc3/my_slc/d0/PC_REG/Load
-# add wave -noupdate /testbench/lc3/my_slc/d0/PC_REG/DataIn
-# add wave -noupdate /testbench/lc3/my_slc/d0/IR_REG/Reset
-# add wave -noupdate /testbench/lc3/my_slc/d0/IR_REG/Load
-# add wave -noupdate /testbench/lc3/my_slc/d0/IR_REG/DataIn
-# add wave -noupdate /testbench/lc3/my_slc/d0/IR_REG/DataOut
-# add wave -noupdate /testbench/lc3/my_slc/d0/MAR_REG/Reset
-# add wave -noupdate /testbench/lc3/my_slc/d0/MAR_REG/Load
-# add wave -noupdate /testbench/lc3/my_slc/d0/MAR_REG/DataIn
-# add wave -noupdate /testbench/lc3/my_slc/d0/MDR_REG/Reset
-# add wave -noupdate /testbench/lc3/my_slc/d0/MDR_REG/Load
-# add wave -noupdate /testbench/lc3/my_slc/d0/MDR_REG/DataIn
-# add wave -noupdate /testbench/lc3/my_slc/d0/MDR_M/BUS
-# add wave -noupdate /testbench/lc3/my_slc/d0/MDR_M/MEM2IO
-# add wave -noupdate /testbench/lc3/my_slc/d0/MDR_M/Select
-# add wave -noupdate /testbench/lc3/my_slc/d0/MDR_M/Output
-# add wave -noupdate /testbench/lc3/my_slc/d0/GateALU
-# add wave -noupdate /testbench/lc3/my_slc/d0/GateMARMUX
-# add wave -noupdate /testbench/lc3/my_slc/d0/GateMDR
-# add wave -noupdate /testbench/lc3/my_slc/d0/GatePC
-# add wave -noupdate /testbench/lc3/my_slc/IR
-# add wave -noupdate /testbench/lc3/my_slc/MAR
-# add wave -noupdate /testbench/lc3/my_slc/MDR
-# add wave -noupdate /testbench/lc3/my_slc/PC
-# TreeUpdate [SetDefaultTree]
-# WaveRestoreCursors {{Cursor 1} {50000 ps} 0}
-# quietly wave cursor active 1
-# configure wave -namecolwidth 338
-# configure wave -valuecolwidth 104
-# configure wave -justifyvalue left
-# configure wave -signalnamewidth 0
-# configure wave -snapdistance 10
-# configure wave -datasetprefix 0
-# configure wave -rowmargin 4
-# configure wave -childrowmargin 2
-# configure wave -gridoffset 0
-# configure wave -gridperiod 1
-# configure wave -griddelta 40
-# configure wave -timeline 0
-# configure wave -timelineunits ps
-# update
-# WaveRestoreZoom {241153 ps} {2092571 ps}
 # 
 # add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: jalevy3  Hostname: ECEB-4072-10  ProcessID: 6684
+#           Attempting to use alternate WLF file "./wlft2ra0dh".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft2ra0dh
 # view structure
 # .main_pane.structure.interior.cs.body.struct
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run 2000 ns
-# End time: 01:07:58 on Oct 02,2019, Elapsed time: 0:12:05
+do lab6_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/joey3/Desktop/ECE385/lab6 {C:/Users/joey3/Desktop/ECE385/lab6/register.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:57:57 on Oct 11,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joey3/Desktop/ECE385/lab6" C:/Users/joey3/Desktop/ECE385/lab6/register.sv 
+# -- Compiling module register16
+# -- Compiling module eightreg16
+# -- Compiling module flipflop
+# 
+# Top level modules:
+# 	register16
+# 	eightreg16
+# 	flipflop
+# End time: 21:57:57 on Oct 11,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/joey3/Desktop/ECE385/lab6 {C:/Users/joey3/Desktop/ECE385/lab6/HexDriver.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:57:57 on Oct 11,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joey3/Desktop/ECE385/lab6" C:/Users/joey3/Desktop/ECE385/lab6/HexDriver.sv 
+# -- Compiling module HexDriver
+# 
+# Top level modules:
+# 	HexDriver
+# End time: 21:57:57 on Oct 11,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/joey3/Desktop/ECE385/lab6 {C:/Users/joey3/Desktop/ECE385/lab6/tristate.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:57:57 on Oct 11,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joey3/Desktop/ECE385/lab6" C:/Users/joey3/Desktop/ECE385/lab6/tristate.sv 
+# -- Compiling module tristate
+# 
+# Top level modules:
+# 	tristate
+# End time: 21:57:57 on Oct 11,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/joey3/Desktop/ECE385/lab6 {C:/Users/joey3/Desktop/ECE385/lab6/test_memory.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:57:57 on Oct 11,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joey3/Desktop/ECE385/lab6" C:/Users/joey3/Desktop/ECE385/lab6/test_memory.sv 
+# -- Compiling module test_memory
+# 
+# Top level modules:
+# 	test_memory
+# End time: 21:57:57 on Oct 11,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/joey3/Desktop/ECE385/lab6 {C:/Users/joey3/Desktop/ECE385/lab6/SLC3_2.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:57:57 on Oct 11,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joey3/Desktop/ECE385/lab6" C:/Users/joey3/Desktop/ECE385/lab6/SLC3_2.sv 
+# -- Compiling package SLC3_2
+# 
+# Top level modules:
+# 	--none--
+# End time: 21:57:57 on Oct 11,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/joey3/Desktop/ECE385/lab6 {C:/Users/joey3/Desktop/ECE385/lab6/Mem2IO.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:57:58 on Oct 11,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joey3/Desktop/ECE385/lab6" C:/Users/joey3/Desktop/ECE385/lab6/Mem2IO.sv 
+# -- Compiling module Mem2IO
+# 
+# Top level modules:
+# 	Mem2IO
+# End time: 21:57:58 on Oct 11,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/joey3/Desktop/ECE385/lab6 {C:/Users/joey3/Desktop/ECE385/lab6/ISDU.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:57:58 on Oct 11,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joey3/Desktop/ECE385/lab6" C:/Users/joey3/Desktop/ECE385/lab6/ISDU.sv 
+# -- Compiling module ISDU
+# 
+# Top level modules:
+# 	ISDU
+# End time: 21:57:58 on Oct 11,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/joey3/Desktop/ECE385/lab6 {C:/Users/joey3/Desktop/ECE385/lab6/ALU.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:57:58 on Oct 11,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joey3/Desktop/ECE385/lab6" C:/Users/joey3/Desktop/ECE385/lab6/ALU.sv 
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 21:57:58 on Oct 11,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/joey3/Desktop/ECE385/lab6 {C:/Users/joey3/Desktop/ECE385/lab6/mux.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:57:58 on Oct 11,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joey3/Desktop/ECE385/lab6" C:/Users/joey3/Desktop/ECE385/lab6/mux.sv 
+# -- Compiling module m_PCMUX
+# -- Compiling module m_DRMUX
+# -- Compiling module m_SR1MUX
+# -- Compiling module m_SR2MUX
+# -- Compiling module m_ADDR1MUX
+# -- Compiling module m_ADDR2MUX
+# -- Compiling module m_MDRMUX
+# -- Compiling module m_GATES
+# 
+# Top level modules:
+# 	m_PCMUX
+# 	m_DRMUX
+# 	m_SR1MUX
+# 	m_SR2MUX
+# 	m_ADDR1MUX
+# 	m_ADDR2MUX
+# 	m_MDRMUX
+# 	m_GATES
+# End time: 21:57:58 on Oct 11,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/joey3/Desktop/ECE385/lab6 {C:/Users/joey3/Desktop/ECE385/lab6/datapath.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:57:58 on Oct 11,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joey3/Desktop/ECE385/lab6" C:/Users/joey3/Desktop/ECE385/lab6/datapath.sv 
+# -- Compiling module datapath
+# 
+# Top level modules:
+# 	datapath
+# End time: 21:57:58 on Oct 11,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/joey3/Desktop/ECE385/lab6 {C:/Users/joey3/Desktop/ECE385/lab6/NZP.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:57:58 on Oct 11,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joey3/Desktop/ECE385/lab6" C:/Users/joey3/Desktop/ECE385/lab6/NZP.sv 
+# -- Compiling module NZP
+# 
+# Top level modules:
+# 	NZP
+# End time: 21:57:58 on Oct 11,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/joey3/Desktop/ECE385/lab6 {C:/Users/joey3/Desktop/ECE385/lab6/slc3.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:57:58 on Oct 11,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joey3/Desktop/ECE385/lab6" C:/Users/joey3/Desktop/ECE385/lab6/slc3.sv 
+# -- Compiling module slc3
+# 
+# Top level modules:
+# 	slc3
+# End time: 21:57:58 on Oct 11,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/joey3/Desktop/ECE385/lab6 {C:/Users/joey3/Desktop/ECE385/lab6/memory_contents.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:57:58 on Oct 11,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joey3/Desktop/ECE385/lab6" C:/Users/joey3/Desktop/ECE385/lab6/memory_contents.sv 
+# -- Compiling package memory_contents_sv_unit
+# -- Importing package SLC3_2
+# -- Compiling module memory_parser
+# 
+# Top level modules:
+# 	memory_parser
+# End time: 21:57:59 on Oct 11,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/joey3/Desktop/ECE385/lab6 {C:/Users/joey3/Desktop/ECE385/lab6/lab6_toplevel.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:57:59 on Oct 11,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joey3/Desktop/ECE385/lab6" C:/Users/joey3/Desktop/ECE385/lab6/lab6_toplevel.sv 
+# -- Compiling module lab6_toplevel
+# 
+# Top level modules:
+# 	lab6_toplevel
+# End time: 21:57:59 on Oct 11,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+C:/Users/joey3/Desktop/ECE385/lab6 {C:/Users/joey3/Desktop/ECE385/lab6/testbench.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:57:59 on Oct 11,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joey3/Desktop/ECE385/lab6" C:/Users/joey3/Desktop/ECE385/lab6/testbench.sv 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 21:57:59 on Oct 11,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  testbench
+# End time: 21:58:01 on Oct 11,2019, Elapsed time: 0:03:35
 # Errors: 0, Warnings: 4
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" testbench 
+# Start time: 21:58:01 on Oct 11,2019
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.lab6_toplevel
+# Loading work.slc3
+# Loading work.HexDriver
+# Loading work.datapath
+# Loading work.m_PCMUX
+# Loading work.m_ADDR1MUX
+# Loading work.m_ADDR2MUX
+# Loading work.m_DRMUX
+# Loading work.m_SR1MUX
+# Loading work.m_SR2MUX
+# Loading work.m_MDRMUX
+# Loading work.m_GATES
+# Loading work.eightreg16
+# Loading work.register16
+# Loading work.ALU
+# Loading work.NZP
+# Loading work.flipflop
+# Loading work.Mem2IO
+# Loading work.tristate
+# Loading work.ISDU
+# Loading work.test_memory
+# Loading work.SLC3_2
+# Loading work.memory_contents_sv_unit
+# Loading work.memory_parser
+# ** Warning: (vsim-3015) C:/Users/joey3/Desktop/ECE385/lab6/datapath.sv(63): [PCDPC] - Port size (16) does not match connection size (3) for port 'Output'. The port definition is at: C:/Users/joey3/Desktop/ECE385/lab6/mux.sv(76).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/lc3/my_slc/d0/SR2_MUX File: C:/Users/joey3/Desktop/ECE385/lab6/mux.sv
+# ** Warning: (vsim-3015) C:/Users/joey3/Desktop/ECE385/lab6/datapath.sv(76): [PCDPC] - Port size (16) does not match connection size (3) for port 'B'. The port definition is at: C:/Users/joey3/Desktop/ECE385/lab6/ALU.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/lc3/my_slc/d0/new_ALU File: C:/Users/joey3/Desktop/ECE385/lab6/ALU.sv
+# WARNING: No extended dataflow license exists
+# 
+# add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: jalevy3  Hostname: ECEB-4072-10  ProcessID: 6684
+#           Attempting to use alternate WLF file "./wlftve7wcr".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftve7wcr
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 2000 ns
+add wave -position insertpoint  \
+sim:/testbench/lc3/my_slc/state_controller/State
+restart -f; run 2500ns
+# ** Warning: (vsim-3015) C:/Users/joey3/Desktop/ECE385/lab6/datapath.sv(63): [PCDPC] - Port size (16) does not match connection size (3) for port 'Output'. The port definition is at: C:/Users/joey3/Desktop/ECE385/lab6/mux.sv(76).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/lc3/my_slc/d0/SR2_MUX File: C:/Users/joey3/Desktop/ECE385/lab6/mux.sv
+# ** Warning: (vsim-3015) C:/Users/joey3/Desktop/ECE385/lab6/datapath.sv(76): [PCDPC] - Port size (16) does not match connection size (3) for port 'B'. The port definition is at: C:/Users/joey3/Desktop/ECE385/lab6/ALU.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/lc3/my_slc/d0/new_ALU File: C:/Users/joey3/Desktop/ECE385/lab6/ALU.sv
+add wave -position insertpoint  \
+sim:/testbench/lc3/my_slc/state_controller/State
+restart -f; run 2500ns
+# ** Warning: (vsim-3015) C:/Users/joey3/Desktop/ECE385/lab6/datapath.sv(63): [PCDPC] - Port size (16) does not match connection size (3) for port 'Output'. The port definition is at: C:/Users/joey3/Desktop/ECE385/lab6/mux.sv(76).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/lc3/my_slc/d0/SR2_MUX File: C:/Users/joey3/Desktop/ECE385/lab6/mux.sv
+# ** Warning: (vsim-3015) C:/Users/joey3/Desktop/ECE385/lab6/datapath.sv(76): [PCDPC] - Port size (16) does not match connection size (3) for port 'B'. The port definition is at: C:/Users/joey3/Desktop/ECE385/lab6/ALU.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/lc3/my_slc/d0/new_ALU File: C:/Users/joey3/Desktop/ECE385/lab6/ALU.sv
+add wave -position insertpoint  \
+sim:/testbench/lc3/my_slc/d0/REG_FILE/regout
+restart -f; run 3500ns
+# ** Warning: (vsim-3015) C:/Users/joey3/Desktop/ECE385/lab6/datapath.sv(63): [PCDPC] - Port size (16) does not match connection size (3) for port 'Output'. The port definition is at: C:/Users/joey3/Desktop/ECE385/lab6/mux.sv(76).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/lc3/my_slc/d0/SR2_MUX File: C:/Users/joey3/Desktop/ECE385/lab6/mux.sv
+# ** Warning: (vsim-3015) C:/Users/joey3/Desktop/ECE385/lab6/datapath.sv(76): [PCDPC] - Port size (16) does not match connection size (3) for port 'B'. The port definition is at: C:/Users/joey3/Desktop/ECE385/lab6/ALU.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/lc3/my_slc/d0/new_ALU File: C:/Users/joey3/Desktop/ECE385/lab6/ALU.sv
+add wave -position insertpoint  \
+sim:/testbench/lc3/my_slc/PC
+add wave -position insertpoint  \
+sim:/testbench/lc3/my_slc/MAR \
+sim:/testbench/lc3/my_slc/MDR \
+sim:/testbench/lc3/my_slc/IR
+restart -f; run 3500ns
+# ** Warning: (vsim-3015) C:/Users/joey3/Desktop/ECE385/lab6/datapath.sv(63): [PCDPC] - Port size (16) does not match connection size (3) for port 'Output'. The port definition is at: C:/Users/joey3/Desktop/ECE385/lab6/mux.sv(76).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/lc3/my_slc/d0/SR2_MUX File: C:/Users/joey3/Desktop/ECE385/lab6/mux.sv
+# ** Warning: (vsim-3015) C:/Users/joey3/Desktop/ECE385/lab6/datapath.sv(76): [PCDPC] - Port size (16) does not match connection size (3) for port 'B'. The port definition is at: C:/Users/joey3/Desktop/ECE385/lab6/ALU.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/lc3/my_slc/d0/new_ALU File: C:/Users/joey3/Desktop/ECE385/lab6/ALU.sv
+# End time: 22:15:27 on Oct 11,2019, Elapsed time: 0:17:26
+# Errors: 0, Warnings: 13

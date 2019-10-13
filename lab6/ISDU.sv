@@ -198,7 +198,7 @@ module ISDU (   input logic         Clk,
 					Next_state = S_22;
 				else
 					Next_state = S_18;
-
+			S_22: Next_state = S_18;
 			
 			
 			// You need to finish the rest of states.....
