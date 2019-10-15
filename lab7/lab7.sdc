@@ -145,6 +145,22 @@ set_input_delay -add_delay -max -clock [get_clocks {main_clk_50}]  3.000 [get_po
 set_input_delay -add_delay -min -clock [get_clocks {main_clk_50}]  2.000 [get_ports {altera_reserved_tdi}]
 set_input_delay -add_delay -max -clock [get_clocks {main_clk_50}]  3.000 [get_ports {altera_reserved_tms}]
 set_input_delay -add_delay -min -clock [get_clocks {main_clk_50}]  2.000 [get_ports {altera_reserved_tms}]
+set_input_delay -add_delay -max -clock [get_clocks {main_clk_50}]  3.000 [get_ports {S[0]}]
+set_input_delay -add_delay -min -clock [get_clocks {main_clk_50}]  2.000 [get_ports {S[0]}]
+set_input_delay -add_delay -max -clock [get_clocks {main_clk_50}]  3.000 [get_ports {S[1]}]
+set_input_delay -add_delay -min -clock [get_clocks {main_clk_50}]  2.000 [get_ports {S[1]}]
+set_input_delay -add_delay -max -clock [get_clocks {main_clk_50}]  3.000 [get_ports {S[2]}]
+set_input_delay -add_delay -min -clock [get_clocks {main_clk_50}]  2.000 [get_ports {S[2]}]
+set_input_delay -add_delay -max -clock [get_clocks {main_clk_50}]  3.000 [get_ports {S[3]}]
+set_input_delay -add_delay -min -clock [get_clocks {main_clk_50}]  2.000 [get_ports {S[3]}]
+set_input_delay -add_delay -max -clock [get_clocks {main_clk_50}]  3.000 [get_ports {S[4]}]
+set_input_delay -add_delay -min -clock [get_clocks {main_clk_50}]  2.000 [get_ports {S[4]}]
+set_input_delay -add_delay -max -clock [get_clocks {main_clk_50}]  3.000 [get_ports {S[5]}]
+set_input_delay -add_delay -min -clock [get_clocks {main_clk_50}]  2.000 [get_ports {S[5]}]
+set_input_delay -add_delay -max -clock [get_clocks {main_clk_50}]  3.000 [get_ports {S[6]}]
+set_input_delay -add_delay -min -clock [get_clocks {main_clk_50}]  2.000 [get_ports {S[6]}]
+set_input_delay -add_delay -max -clock [get_clocks {main_clk_50}]  3.000 [get_ports {S[7]}]
+set_input_delay -add_delay -min -clock [get_clocks {main_clk_50}]  2.000 [get_ports {S[7]}]
 
 
 #**************************************************************
