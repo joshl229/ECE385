@@ -32,7 +32,7 @@ module testbench();
         Reset = 0;	
 		 #2 Reset = 1; // Toggle Rest
 		 
-		 S= 16'h0014;
+		 S= 16'h06;
 		   Run = 0;
 			#2 Run = 1; 
 		#6 Continue = 0;

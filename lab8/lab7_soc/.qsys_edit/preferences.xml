@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="0" />
+ <systemtable filter="All Interfaces">
+  <columns>
+   <connections preferredWidth="175" visible="1" />
+   <irq preferredWidth="34" />
+   <opcodeName preferredWidth="766" />
+   <tags preferredWidth="437" />
+   <baseaddress preferredWidth="408" />
+   <inputclock preferredWidth="415" />
+   <export preferredWidth="444" />
+   <description preferredWidth="1041" visible="1" />
+   <name preferredWidth="1344" />
+  </columns>
+ </systemtable>
+ <library
+   expandedCategories="Library/Basic Functions/Simulation; Debug and Verification/Debug and Performance,Library/Basic Functions,Library/Basic Functions/Simulation; Debug and Verification,Library,Project" />
+ <window width="2024" height="2599" x="-13" y="0" />
+</preferences>
