@@ -45,6 +45,12 @@ void UsbWrite(alt_u16 Address, alt_u16 Data)
 //*************************************************************************//
 //							Write this function							   //
 //*************************************************************************//
+// Step 1: Write the address to access to HPI_ADDR
+	IO_write(HPI_ADDR, Address);
+
+// Step 2: Write data to HPI_Data in 16-bit little endian words
+	IO_write(HPI_DATA, Data);
+
 }
 
 /*****************************************************************************/
@@ -67,6 +73,11 @@ alt_u16 UsbRead(alt_u16 Address)
 //*************************************************************************//
 //							Write this function							   //
 //*************************************************************************//
+// Step 1: Write the address to access to HPI_ADDR
+	IO_write(HPI_ADDR, Address);
+
+// Step 2: Read from HPI_DATA
+	return IO_read(HPI_DATA);
 }
 
 
