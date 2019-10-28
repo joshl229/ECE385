@@ -41,54 +41,62 @@ module avalon_aes_interface (
 logic [31:0] reg_data [15:0];
 logic [31:0] data_out;
 
+assign EXPORT_DATA[31:16] = reg_data[3][15:0];
+assign EXPORT_DATA[15:0] = reg_data[0][31:16];
+
 
 	
-always_ff @ (posedge Clk)
+always_ff @ (posedge CLK)
 	begin
-			case(AVL_BYTE_EN)
-	
-			4'b1111:
-				data_out[31:0] = AVL_WRITEDATA[31:0];
-	
-			4'b1100:
-				data_out[31:16] = AVL_WRITEDATA[31:16];
-			4'b0011:
-				data_out[15:0] = AVL_WRITEDATA[15:0];
+		case(AVL_BYTE_EN)		
+				4'b1111:
+					data_out[31:0] <= AVL_WRITEDATA[31:0];
 		
-			4'b1000:
-				data_out[31:24] = AVL_WRITEDATA[31:24];
+				4'b1100:
+					data_out[31:16] <= AVL_WRITEDATA[31:16];
+				4'b0011:
+					data_out[15:0] <= AVL_WRITEDATA[15:0];
+			
+				4'b1000:
+					data_out[31:24] <= AVL_WRITEDATA[31:24];
 
-			4'b0100:
-				data_out[23:16] = AVL_WRITEDATA[23:16];
-			4'b0010:
-				data_out[15:8] = AVL_WRITEDATA[15:8];
-			4'b0001:
-				data_out[8:0] = AVL_WRITEDATA[8:0];
-		endcase
+				4'b0100:
+					data_out[23:16] <= AVL_WRITEDATA[23:16];
+				4'b0010:
+					data_out[15:8] <= AVL_WRITEDATA[15:8];
+				4'b0001:
+					data_out[8:0] <= AVL_WRITEDATA[8:0];
+			default;
+		endcase;
 		
 		
 	if (RESET)
-		reg_data[0] = 32h'0;
-		reg_data[1] = 32h'0;
-		reg_data[2] = 32h'0;
-		reg_data[3] = 32h'0;
-		reg_data[4] = 32h'0;
-		reg_data[5] = 32h'0;
-		reg_data[6] = 32h'0;
-		reg_data[7] = 32h'0;
-		reg_data[8] = 32h'0;
-		reg_data[9] = 32h'0;
-		reg_data[10] = 32h'0;
-		reg_data[11] = 32h'0;
-		reg_data[12] = 32h'0;
-		reg_data[13] = 32h'0;
-		reg_data[14] = 32h'0;	
-		reg_data[15] = 32h'0;	
-		reg_data[16] = 32h'0;	
-			
-	else 
-			data_out[AVL_ADDR] = reg_data
+	begin
+		reg_data[0] = 32'b0;
+		reg_data[1] = 32'b0;
+		reg_data[2] = 32'b0;
+		reg_data[3] = 32'b0;
+		reg_data[4] = 32'b0;
+		reg_data[5] = 32'b0;
+		reg_data[6] = 32'b0;
+		reg_data[7] = 32'b0;
+		reg_data[8] = 32'b0;
+		reg_data[9] = 32'b0;
+		reg_data[10] = 32'h0;
+		reg_data[11] = 32'h0;
+		reg_data[12] = 32'h0;
+		reg_data[13] = 32'h0;
+		reg_data[14] = 32'h0;	
+		reg_data[15] = 32'h0;	
+		reg_data[16] = 32'h0;	
+		end
+	if(AVL_CS && AVL_READ)
+	begin
+			reg_data[AVL_ADDR] = data_out;
 	end
+	else;
+	
+end
    
 
 

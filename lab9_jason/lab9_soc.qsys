@@ -49,6 +49,14 @@
          type = "String";
       }
    }
+   element lab9_soc
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone IV E";
+         type = "String";
+      }
+   }
    element nios2_gen2_0
    {
       datum _sortIndex
